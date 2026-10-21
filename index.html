@@ -1,164 +1,1894 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0913">
-  <meta name="description" content="Enter A Boy in a Girl Parade Army, an original anime-inspired school-life, comedy, friendship and mystery novel by Yaya.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="A Boy in a Girl Parade Army | Yaya">
-  <meta property="og:description" content="One boy. One academy. Absolute chaos. Discover the story, meet the squad, and explore the mysteries behind the academy.">
-  <meta property="og:image" content="cover.jpg">
-  <meta name="color-scheme" content="dark">
-  <title>A Boy in a Girl Parade Army | Yaya</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0913'/%3E%3Crect x='1' y='1' width='62' height='62' rx='15' fill='none' stroke='%23e7cba0' stroke-opacity='.65'/%3E%3Cpath d='M32 20 C22 7 9 20 18 30 L32 44 L46 30 C55 20 42 7 32 20Z' fill='none' stroke='%23c7a5fa' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M32 13 L35 21 L43 24 L35 27 L32 35 L29 27 L21 24 L29 21Z' fill='%23e7cba0'/%3E%3Ccircle cx='47' cy='45' r='3' fill='%23e9a6cf'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-  <style>
-    :root{color-scheme:dark;--bg:#0b0913;--panel:#15111f;--panel2:#1c1729;--purple:#a78bfa;--rose:#d9a0b7;--gold:#e7cba0;--text:#f8f2ed;--muted:#b9afc5;--border:rgba(215,190,255,.17);--display:'Cinzel',Georgia,serif;--story:'Lora',Georgia,serif;--ui:'DM Sans',system-ui,sans-serif;--max:1120px;--nav-h:78px}
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px);scrollbar-width:thin;scrollbar-color:#b99aff #100d1b}
-    body{margin:0;background:radial-gradient(ellipse at 75% 0%,#26183d 0,transparent 38%),var(--bg);color:var(--text);font-family:var(--ui);font-size:16px;line-height:1.7;letter-spacing:.01em;-webkit-font-smoothing:antialiased}
-    body::selection{background:#ff8c42;color:#171717}::selection{background:#ff8c42;color:#171717}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#100d1b}::-webkit-scrollbar-thumb{background:linear-gradient(#a78bfa,#e9a6cf);border:2px solid #100d1b;border-radius:20px}
-    a{color:inherit;text-decoration:none}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}img{max-width:100%}.container{width:min(var(--max),90%);margin-inline:auto}.skip-link{position:fixed;top:10px;left:10px;z-index:1000;padding:10px 14px;background:var(--gold);color:#17121e;border-radius:8px;transform:translateY(-160%)}.skip-link:focus{transform:translateY(0)}
-    .reading-progress{position:fixed;inset:0 auto auto 0;width:0;height:3px;z-index:1000;background:linear-gradient(90deg,var(--purple),#f0abcf);box-shadow:0 0 12px #a78bfa80;pointer-events:none}
-    header{position:sticky;top:0;z-index:100;background:rgba(11,9,19,.88);border-bottom:1px solid var(--border);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}nav{min-height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .logo{display:inline-flex;flex-direction:column;gap:0;font-family:var(--display);font-size:clamp(.7rem,1.25vw,.94rem);font-weight:900;line-height:1.25;letter-spacing:.105em;white-space:nowrap}.logo-top{color:var(--text)}.logo-bottom{color:var(--rose);font-size:.82em;letter-spacing:.2em}.navlinks{display:flex;align-items:center;gap:clamp(14px,2.2vw,27px);color:var(--muted);font-size:.87rem;font-weight:600}.navlinks a{transition:color .2s}.navlinks a:hover,.navlinks a[aria-current="location"]{color:var(--gold)}.menu{display:none;border:1px solid var(--border);border-radius:10px;padding:8px 12px;background:#ffffff06;color:var(--text);cursor:pointer}
-    .hero{position:relative;padding:clamp(64px,9vw,110px) 0 90px;overflow:hidden}.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 0 40%,rgba(167,139,250,.08),transparent 45%)}.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:.73rem;font-weight:800}.eyebrow::before{content:"✦";margin-right:9px;color:var(--rose)}h1,.intro-title,.section-title{font-family:var(--display);font-weight:700;text-wrap:balance}h1{font-size:clamp(2.6rem,6vw,5.4rem);line-height:1.08;letter-spacing:-.045em;margin:22px 0}.gradient{color:var(--purple);background:linear-gradient(110deg,#fff0dd,#c4a5ff,var(--rose));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}.lead{color:var(--muted);font-size:clamp(1rem,1.4vw,1.1rem);max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:1px solid var(--border);border-radius:10px;font-weight:750;transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(120deg,#7951c8,#a078d6);border-color:transparent;color:white;box-shadow:0 8px 25px #7951c82c}.primary:hover{background:linear-gradient(120deg,#8a63d8,#b08ae2)}.secondary{background:rgba(255,255,255,.025)}.secondary:hover{border-color:#a78bfa88}.meta{color:var(--muted);font-size:.8rem;margin-top:26px}.cover-wrap{position:relative;display:grid;place-items:center;padding:24px}.cover-wrap::before{content:"";position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,rgba(167,139,250,.27),transparent 68%);filter:blur(6px)}.cover{position:relative;width:min(100%,350px);aspect-ratio:2/3;border-radius:8px;overflow:hidden;border:1px solid rgba(231,203,160,.45);background:linear-gradient(145deg,#241936,#100d18);box-shadow:0 30px 75px #0009;transform:rotate(1.5deg);transition:transform .35s}.cover:hover{transform:rotate(0) translateY(-5px)}.cover img{width:100%;height:100%;object-fit:cover;display:block}.cover-fallback{display:none;position:absolute;inset:0;padding:28px;text-align:center;place-items:center;background:radial-gradient(circle at 50% 25%,#49306c,#100d18 68%)}.cover-fallback strong{font:800 clamp(1.5rem,3vw,2.2rem)/1.2 var(--display);display:block}.cover-fallback span{display:block;color:var(--gold);letter-spacing:3px;font-size:.7rem;margin-top:20px}
-    section{padding:clamp(58px,7vw,84px) 0}.section-title{font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.2;letter-spacing:-.03em;margin:14px 0}.section-intro{color:var(--muted);max-width:690px}.story-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(25px,4vw,46px);align-items:start}.info-box,.character,.author-box{border:1px solid var(--border);background:linear-gradient(145deg,#191426,#100e18);border-radius:16px}.info-box{padding:26px}.number{color:var(--gold);font-size:3.4rem;font-weight:850;line-height:1.2;margin-top:10px}.info-box h3{font-family:var(--display);font-size:1.1rem}.info-box p,p{color:var(--muted)}.quote{border-left:2px solid var(--rose);padding-left:18px;color:#e8d2e0;margin:25px 0;font:italic 1.05rem var(--story)}
-    #blurb{position:relative;padding:clamp(70px,9vw,115px) 0;overflow:hidden;border-block:1px solid var(--border);background:radial-gradient(ellipse at 8% 15%,rgba(167,139,250,.13),transparent 42%),radial-gradient(ellipse at 95% 85%,rgba(217,160,169,.11),transparent 40%),linear-gradient(145deg,#100d1b,#171122 55%,#100d19)}.blurb-inner{max-width:1000px;margin-inline:auto}.blurb-label{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border:1px solid #e7cba059;border-radius:50px;color:var(--gold);background:#e7cba009;font-size:.7rem;font-weight:850;letter-spacing:2.3px;text-transform:uppercase}.blurb-label::before{content:"✦";color:var(--rose)}#blurb .section-title{margin:25px 0 18px;font-size:clamp(2.8rem,6.7vw,5.5rem);line-height:1.06;letter-spacing:-.04em}.blurb-divider{display:flex;align-items:center;gap:17px;width:fit-content;margin:25px 0 35px;color:var(--rose);font-size:1.2rem;letter-spacing:8px}.blurb-divider::before,.blurb-divider::after{content:"";width:clamp(30px,8vw,90px);height:1px;background:linear-gradient(90deg,transparent,var(--gold))}.blurb-divider::after{transform:rotate(180deg)}.blurb-copy{max-width:900px;padding-left:28px;border-left:2px solid #d9a0b7a6;font-family:var(--story)}.blurb-copy p{margin:0 0 26px;color:#d4cada;font-size:clamp(1.05rem,1.65vw,1.3rem);line-height:1.95;letter-spacing:0}.blurb-copy p:last-child{margin-bottom:0}.blurb-copy .blurb-opening{color:var(--text);font-size:clamp(1.15rem,2vw,1.45rem)}.orange-i{float:left;color:#ff8c00;font-family:var(--display);font-size:3.55em;font-weight:800;line-height:.95;margin:.06em .12em 0 0}.blurb-copy .blurb-ending{margin-top:34px;padding:23px 26px;border:1px solid #e7cba03b;border-radius:15px;color:#f0d8e5;background:linear-gradient(120deg,#a78bfa17,#d9a0a912);font-size:clamp(1.08rem,1.8vw,1.4rem);font-style:italic}.blurb-bottom{margin-top:30px;color:var(--gold);font-size:.75rem;font-weight:750;letter-spacing:2px;text-transform:uppercase}
-    .characters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:32px}.character{padding:23px;min-width:0;transition:transform .22s,border-color .22s,background .22s}.character:hover{transform:translateY(-4px);border-color:#a78bfa80;background:linear-gradient(145deg,#201832,#100e18)}.symbol{font-size:1.65rem;color:var(--gold)}.character h3,.author-box h3{font-family:var(--display);line-height:1.4}.character h3{font-size:1.05rem;margin:10px 0 4px}.role{font-size:.68rem;color:var(--rose);letter-spacing:1.4px;text-transform:uppercase;font-weight:800}.character p{font-size:.9rem;margin-bottom:0}.mystery{border:1px solid var(--border);border-radius:20px;padding:clamp(25px,4vw,40px);background:radial-gradient(ellipse at 100% 0%,#49306c80,transparent 48%),var(--panel)}.tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.tag{border:1px solid var(--border);border-radius:30px;padding:6px 12px;color:#dfd3ee;font-size:.8rem;background:#ffffff04}.author-grid{display:grid;grid-template-columns:140px minmax(0,1fr);gap:25px;align-items:start;margin-top:28px}.monogram{aspect-ratio:1;display:grid;place-items:center;border-radius:18px;background:linear-gradient(140deg,#a78bfa38,#d9a0a920);border:1px solid var(--border);color:var(--gold);font:900 3.6rem var(--display)}.author-box{padding:28px}.author-box h3{margin-top:0;font-size:1.55rem}.author-box p:last-child{margin-bottom:0}footer{border-top:1px solid var(--border);padding:28px 0;font-size:.8rem;color:#9388a5}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer strong{color:var(--text)}
-    /* Cinematic story splash: pack, run, escape the noise, finally get home */
-    #intro{position:fixed;inset:0;z-index:500;display:grid;place-items:center;overflow:hidden;text-align:center;padding:clamp(18px,4vw,36px);background:#090811;isolation:isolate;transition:opacity .7s,visibility .7s}
-    #intro.done{opacity:0;visibility:hidden;pointer-events:none}
-    .intro-scene{position:absolute;inset:0;overflow:hidden;background:linear-gradient(180deg,#171126 0%,#100d1a 62%,#08070e 100%);z-index:-1}
-    .hall-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 34%,#59407888,transparent 55%),linear-gradient(90deg,#08070ed9,transparent 25%,transparent 75%,#08070ed9)}
-    .hall-ceiling{position:absolute;left:-15%;right:-15%;top:-35%;height:75%;background:repeating-linear-gradient(90deg,transparent 0 12%,#a78bfa12 12.2% 12.5%,transparent 12.7% 25%),linear-gradient(#08070c,#29203b);clip-path:polygon(0 0,100% 0,68% 100%,32% 100%)}
-    .hall-floor{position:absolute;left:-30%;right:-30%;bottom:-30%;height:67%;background:repeating-linear-gradient(0deg,transparent 0 38px,#d9a0b715 39px 41px),linear-gradient(180deg,#2b203c,#09080f);clip-path:polygon(34% 0,66% 0,100% 100%,0 100%);animation:floorRush 1.05s linear infinite}
-    .hallway-doors{position:absolute;inset:8% -10% 18%;background:repeating-linear-gradient(90deg,transparent 0 8%,#c4a5ff14 8.2% 8.5%,transparent 8.7% 16%),repeating-linear-gradient(90deg,transparent 0 15%,#08070c 15.2% 16%,transparent 16.2% 31%);transform:perspective(320px) rotateX(3deg);animation:doorsRush 1.8s linear infinite}
-    .exit-door{position:absolute;left:50%;top:21%;width:clamp(72px,13vw,150px);height:clamp(105px,22vh,220px);transform:translateX(-50%);border:2px solid #e7cba0aa;border-radius:5px 5px 0 0;background:linear-gradient(180deg,#f8dcae,#c7a5fa 48%,#fff0d9);box-shadow:0 0 55px #e7cba055;animation:homeDoor 7.4s both}
-    .exit-door:before{content:"HOME";position:absolute;top:10px;left:0;right:0;color:#22182e;font:900 clamp(8px,1.1vw,12px) var(--ui);letter-spacing:2px}
-    .exit-door:after{content:"";position:absolute;right:10%;top:52%;width:5px;height:5px;border-radius:50%;background:#2a1b3c}
-    .locker{position:absolute;top:15%;bottom:20%;width:18%;border:1px solid #a78bfa32;background:repeating-linear-gradient(180deg,#211a30 0 16%,#a78bfa24 16.4% 17%,#171323 17.5% 32%);box-shadow:inset 0 0 18px #0008}
-    .locker.left{left:-2%;transform:perspective(240px) rotateY(17deg)}.locker.right{right:-2%;transform:perspective(240px) rotateY(-17deg)}
-    .thought{position:absolute;top:15%;padding:8px 13px;border:1px solid #d9a0b76b;border-radius:18px;background:#130f20d9;color:#f8eaf3;font-size:clamp(.62rem,1.3vw,.85rem);font-weight:800;letter-spacing:1px;box-shadow:0 8px 30px #0006;animation:thoughtPanic 5.8s both}
-    .thought.one{left:9%;--tilt:-9deg}.thought.two{right:8%;top:29%;--tilt:8deg;animation-delay:.5s}.thought.three{left:15%;top:43%;--tilt:5deg;animation-delay:1s}
-    .runner{position:absolute;left:50%;bottom:17%;width:clamp(80px,15vw,150px);height:clamp(150px,30vh,270px);transform:translateX(-50%);animation:runnerEscape 7.4s both;filter:drop-shadow(0 12px 20px #0009)}
-    .runner-head{position:absolute;z-index:3;left:38%;top:2%;width:31%;aspect-ratio:1;border-radius:46% 48% 44% 45%;background:#d6a17f;border:2px solid #f4d0ad;box-shadow:inset -7px -3px #8d5a59}
-    .runner-hair{position:absolute;z-index:4;left:34%;top:0;width:38%;height:19%;border-radius:55% 55% 20% 25%;background:#20162b;transform:rotate(-12deg)}
-    .runner-body{position:absolute;left:31%;top:24%;width:44%;height:38%;border-radius:18px 18px 10px 10px;background:linear-gradient(100deg,#a78bfa,#62459c);border:2px solid #d8c4ff;transform:rotate(-9deg)}
-    .runner-bag{position:absolute;z-index:2;left:13%;top:29%;width:30%;height:31%;border-radius:10px 10px 13px 13px;background:linear-gradient(135deg,#d9a0b7,#8d557d);border:2px solid #f2c5d7;transform:rotate(-18deg);box-shadow:inset 0 0 0 4px #402744}
-    .runner-bag:before{content:"";position:absolute;left:23%;right:23%;top:-9%;height:14%;border:2px solid #e7cba0;border-bottom:0;border-radius:8px 8px 0 0}
-    .runner-arm{position:absolute;top:31%;width:13%;height:28%;border-radius:20px;background:#d6a17f;transform-origin:top center}
-    .runner-arm.left{left:25%;transform:rotate(38deg);animation:armLeft .38s ease-in-out infinite alternate}.runner-arm.right{right:18%;transform:rotate(-46deg);animation:armRight .38s ease-in-out infinite alternate}
-    .runner-leg{position:absolute;top:56%;width:15%;height:35%;border-radius:12px;background:#242037;transform-origin:top center}.runner-leg.left{left:35%;animation:legLeft .36s ease-in-out infinite alternate}.runner-leg.right{left:57%;animation:legRight .36s ease-in-out infinite alternate}
-    .runner-shoe{position:absolute;bottom:3%;width:24%;height:8%;border-radius:9px 15px 5px 5px;background:#f0e6ed}.runner-shoe.left{left:24%}.runner-shoe.right{right:11%}
-    .flying-paper{position:absolute;width:clamp(18px,3vw,34px);height:clamp(24px,4vw,44px);background:#f8f0dc;border-radius:2px;box-shadow:0 0 14px #fff2;animation:paperFly 2.2s ease-in-out infinite}
-    .flying-paper:after{content:"≋";color:#8d77b5;font-size:14px;display:block;margin-top:2px}
-    .paper-a{left:24%;top:48%;animation-delay:-.7s}.paper-b{right:23%;top:56%;animation-delay:-1.4s}.paper-c{right:32%;top:17%;animation-delay:-.2s}
-    .packing-card{position:absolute;left:50%;top:50%;width:min(84vw,560px);transform:translate(-50%,-50%);padding:16px 22px;border:1px solid #d9a0b75c;border-radius:16px;background:#0c0917df;backdrop-filter:blur(10px);box-shadow:0 20px 70px #0008;animation:packingBeat 7.4s both}
-    .packing-card .packing-label{color:var(--gold);font-size:.7rem;font-weight:900;letter-spacing:3px;text-transform:uppercase}
-    .packing-card .packing-line{margin-top:5px;color:#fff0f5;font:800 clamp(1.15rem,3vw,2rem)/1.25 var(--display);letter-spacing:.02em}
-    .packing-card .packing-small{margin-top:5px;color:#c8bbd8;font-size:.78rem;letter-spacing:.7px}
-    .intro-inner{position:relative;z-index:5;max-width:900px;padding-top:min(37vh,300px);opacity:0;animation:titleArrive 7.4s both}
-    .intro-icon{width:42px;height:42px;color:var(--gold);margin-bottom:4px;filter:drop-shadow(0 0 18px #e7cba080)}
-    .intro-title{font-size:clamp(2rem,7.4vw,5.2rem);line-height:1.08;letter-spacing:-.04em;margin:8px 0 12px;text-shadow:0 8px 35px #0009}
-    .intro-sub{color:#e1d5e8;letter-spacing:1px;text-shadow:0 2px 12px #000}
-    .skip{position:absolute;z-index:10;right:20px;bottom:20px;background:#100d1bcc;color:white;border:1px solid var(--border);border-radius:9px;padding:9px 13px;cursor:pointer;backdrop-filter:blur(8px)}
-    @keyframes floorRush{from{background-position:0 0}to{background-position:0 82px}}
-    @keyframes doorsRush{0%{transform:perspective(320px) rotateX(3deg) scale(1)}100%{transform:perspective(320px) rotateX(3deg) scale(1.12)}}
-    @keyframes homeDoor{0%,58%{opacity:0;transform:translateX(-50%) scale(.55)}72%{opacity:1;transform:translateX(-50%) scale(1.15)}100%{opacity:1;transform:translateX(-50%) scale(1)}}
-    @keyframes runnerEscape{0%,16%{transform:translateX(-50%) translateY(8px) scale(.82);opacity:0}24%{opacity:1}35%,60%{transform:translateX(-50%) translateY(0) scale(1)}78%{transform:translateX(-50%) translateY(-8px) scale(1.08)}100%{transform:translateX(-50%) translateY(-4px) scale(1.08)}}
-    @keyframes armLeft{to{transform:rotate(-35deg)}}@keyframes armRight{to{transform:rotate(30deg)}}@keyframes legLeft{to{transform:rotate(-32deg)}}@keyframes legRight{to{transform:rotate(38deg)}}
-    @keyframes paperFly{0%,100%{transform:translate(0,0) rotate(0);opacity:.15}50%{transform:translate(-38px,-55px) rotate(35deg);opacity:1}}
-    @keyframes thoughtPanic{0%,15%{opacity:0;transform:scale(.65) rotate(var(--tilt,0deg))}25%,60%{opacity:1;transform:scale(1) rotate(var(--tilt,0deg))}78%,100%{opacity:0;transform:scale(.75) rotate(var(--tilt,0deg))}}
-    @keyframes packingBeat{0%,15%{opacity:1;transform:translate(-50%,-50%) scale(1)}22%,35%{opacity:0;transform:translate(-50%,-50%) scale(.88)}100%{opacity:0;transform:translate(-50%,-50%) scale(.88)}}
-    @keyframes titleArrive{0%,68%{opacity:0;transform:translateY(24px) scale(.96)}80%,100%{opacity:1;transform:translateY(0) scale(1)}}
-    @media(max-width:620px){.packing-card{top:43%;padding:13px 15px}.intro-inner{padding-top:46vh}.intro-icon{width:32px;height:32px}.thought.one{left:4%}.thought.two{right:4%}.thought.three{left:6%}.runner{bottom:16%}.intro-title{font-size:clamp(1.8rem,8.2vw,3.3rem)}}
-    @media(prefers-reduced-motion:reduce){#intro .hall-floor,#intro .hallway-doors,#intro .exit-door,#intro .runner,#intro .thought,#intro .flying-paper,#intro .packing-card,#intro .intro-inner,#intro .runner-arm,#intro .runner-leg{animation:none!important}#intro .packing-card{opacity:0}#intro .intro-inner{opacity:1;transform:none}}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0913" />
+    <meta
+      name="description"
+      content="Enter A Boy in a Girl Parade Army, an original anime-inspired school-life, comedy, friendship and mystery novel by Yaya."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="A Boy in a Girl Parade Army | Yaya" />
+    <meta
+      property="og:description"
+      content="One boy. One academy. Absolute chaos. Discover the story, meet the squad, and explore the mysteries behind the academy."
+    />
+    <meta property="og:image" content="cover.jpg" />
+    <meta name="color-scheme" content="dark" />
+    <title>A Boy in a Girl Parade Army | Yaya</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0913'/%3E%3Crect x='1' y='1' width='62' height='62' rx='15' fill='none' stroke='%23e7cba0' stroke-opacity='.65'/%3E%3Cpath d='M32 20 C22 7 9 20 18 30 L32 44 L46 30 C55 20 42 7 32 20Z' fill='none' stroke='%23c7a5fa' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M32 13 L35 21 L43 24 L35 27 L32 35 L29 27 L21 24 L29 21Z' fill='%23e7cba0'/%3E%3Ccircle cx='47' cy='45' r='3' fill='%23e9a6cf'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0913;
+        --panel: #15111f;
+        --panel2: #1c1729;
+        --purple: #a78bfa;
+        --rose: #d9a0b7;
+        --gold: #e7cba0;
+        --text: #f8f2ed;
+        --muted: #b9afc5;
+        --border: rgba(215, 190, 255, 0.17);
+        --display: "Cinzel", Georgia, serif;
+        --story: "Lora", Georgia, serif;
+        --ui: "DM Sans", system-ui, sans-serif;
+        --max: 1120px;
+        --nav-h: 78px;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--nav-h) + 16px);
+        scrollbar-width: thin;
+        scrollbar-color: #b99aff #100d1b;
+      }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 75% 0%, #26183d 0, transparent 38%),
+          var(--bg);
+        color: var(--text);
+        font-family: var(--ui);
+        font-size: 16px;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+        -webkit-font-smoothing: antialiased;
+      }
+      body::selection {
+        background: #ff8c42;
+        color: #171717;
+      }
+      ::selection {
+        background: #ff8c42;
+        color: #171717;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #100d1b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#a78bfa, #e9a6cf);
+        border: 2px solid #100d1b;
+        border-radius: 20px;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        font: inherit;
+      }
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+      button:focus-visible,
+      a:focus-visible {
+        outline: 2px solid var(--gold);
+        outline-offset: 4px;
+      }
+      img {
+        max-width: 100%;
+      }
+      .container {
+        width: min(var(--max), 90%);
+        margin-inline: auto;
+      }
+      .skip-link {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        padding: 10px 14px;
+        background: var(--gold);
+        color: #17121e;
+        border-radius: 8px;
+        transform: translateY(-160%);
+      }
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+      .reading-progress {
+        position: fixed;
+        inset: 0 auto auto 0;
+        width: 0;
+        height: 3px;
+        z-index: 1000;
+        background: linear-gradient(90deg, var(--purple), #f0abcf);
+        box-shadow: 0 0 12px #a78bfa80;
+        pointer-events: none;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(11, 9, 19, 0.88);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+      nav {
+        min-height: var(--nav-h);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .logo {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 0;
+        font-family: var(--display);
+        font-size: clamp(0.7rem, 1.25vw, 0.94rem);
+        font-weight: 900;
+        line-height: 1.25;
+        letter-spacing: 0.105em;
+        white-space: nowrap;
+      }
+      .logo-top {
+        color: var(--text);
+      }
+      .logo-bottom {
+        color: var(--rose);
+        font-size: 0.82em;
+        letter-spacing: 0.2em;
+      }
+      .navlinks {
+        display: flex;
+        align-items: center;
+        gap: clamp(14px, 2.2vw, 27px);
+        color: var(--muted);
+        font-size: 0.87rem;
+        font-weight: 600;
+      }
+      .navlinks a {
+        transition: color 0.2s;
+      }
+      .navlinks a:hover,
+      .navlinks a[aria-current="location"] {
+        color: var(--gold);
+      }
+      .menu {
+        display: none;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 8px 12px;
+        background: #ffffff06;
+        color: var(--text);
+        cursor: pointer;
+      }
+      .hero {
+        position: relative;
+        padding: clamp(64px, 9vw, 110px) 0 90px;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(
+          ellipse at 0 40%,
+          rgba(167, 139, 250, 0.08),
+          transparent 45%
+        );
+      }
+      .hero-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: clamp(28px, 5vw, 64px);
+        align-items: center;
+      }
+      .eyebrow {
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.73rem;
+        font-weight: 800;
+      }
+      .eyebrow::before {
+        content: "✦";
+        margin-right: 9px;
+        color: var(--rose);
+      }
+      h1,
+      .intro-title,
+      .section-title {
+        font-family: var(--display);
+        font-weight: 700;
+        text-wrap: balance;
+      }
+      h1 {
+        font-size: clamp(2.6rem, 6vw, 5.4rem);
+        line-height: 1.08;
+        letter-spacing: -0.045em;
+        margin: 22px 0;
+      }
+      .gradient {
+        color: var(--purple);
+        background: linear-gradient(110deg, #fff0dd, #c4a5ff, var(--rose));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .lead {
+        color: var(--muted);
+        font-size: clamp(1rem, 1.4vw, 1.1rem);
+        max-width: 610px;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 18px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        font-weight: 750;
+        transition:
+          transform 0.2s,
+          border-color 0.2s,
+          background 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .primary {
+        background: linear-gradient(120deg, #7951c8, #a078d6);
+        border-color: transparent;
+        color: white;
+        box-shadow: 0 8px 25px #7951c82c;
+      }
+      .primary:hover {
+        background: linear-gradient(120deg, #8a63d8, #b08ae2);
+      }
+      .secondary {
+        background: rgba(255, 255, 255, 0.025);
+      }
+      .secondary:hover {
+        border-color: #a78bfa88;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 0.8rem;
+        margin-top: 26px;
+      }
+      .cover-wrap {
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .cover-wrap::before {
+        content: "";
+        position: absolute;
+        inset: 6%;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(167, 139, 250, 0.27),
+          transparent 68%
+        );
+        filter: blur(6px);
+      }
+      .cover {
+        position: relative;
+        width: min(100%, 350px);
+        aspect-ratio: 2/3;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid rgba(231, 203, 160, 0.45);
+        background: linear-gradient(145deg, #241936, #100d18);
+        box-shadow: 0 30px 75px #0009;
+        transform: rotate(1.5deg);
+        transition: transform 0.35s;
+      }
+      .cover:hover {
+        transform: rotate(0) translateY(-5px);
+      }
+      .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .cover-fallback {
+        display: none;
+        position: absolute;
+        inset: 0;
+        padding: 28px;
+        text-align: center;
+        place-items: center;
+        background: radial-gradient(circle at 50% 25%, #49306c, #100d18 68%);
+      }
+      .cover-fallback strong {
+        font: 800 clamp(1.5rem, 3vw, 2.2rem)/1.2 var(--display);
+        display: block;
+      }
+      .cover-fallback span {
+        display: block;
+        color: var(--gold);
+        letter-spacing: 3px;
+        font-size: 0.7rem;
+        margin-top: 20px;
+      }
+      section {
+        padding: clamp(58px, 7vw, 84px) 0;
+      }
+      .section-title {
+        font-size: clamp(2rem, 4.4vw, 3.3rem);
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        margin: 14px 0;
+      }
+      .section-intro {
+        color: var(--muted);
+        max-width: 690px;
+      }
+      .story-grid {
+        display: grid;
+        grid-template-columns: 0.72fr 1.28fr;
+        gap: clamp(25px, 4vw, 46px);
+        align-items: start;
+      }
+      .info-box,
+      .character,
+      .author-box {
+        border: 1px solid var(--border);
+        background: linear-gradient(145deg, #191426, #100e18);
+        border-radius: 16px;
+      }
+      .info-box {
+        padding: 26px;
+      }
+      .number {
+        color: var(--gold);
+        font-size: 3.4rem;
+        font-weight: 850;
+        line-height: 1.2;
+        margin-top: 10px;
+      }
+      .info-box h3 {
+        font-family: var(--display);
+        font-size: 1.1rem;
+      }
+      .info-box p,
+      p {
+        color: var(--muted);
+      }
+      .quote {
+        border-left: 2px solid var(--rose);
+        padding-left: 18px;
+        color: #e8d2e0;
+        margin: 25px 0;
+        font: italic 1.05rem var(--story);
+      }
+      #blurb {
+        position: relative;
+        padding: clamp(70px, 9vw, 115px) 0;
+        overflow: hidden;
+        border-block: 1px solid var(--border);
+        background:
+          radial-gradient(
+            ellipse at 8% 15%,
+            rgba(167, 139, 250, 0.13),
+            transparent 42%
+          ),
+          radial-gradient(
+            ellipse at 95% 85%,
+            rgba(217, 160, 169, 0.11),
+            transparent 40%
+          ),
+          linear-gradient(145deg, #100d1b, #171122 55%, #100d19);
+      }
+      .blurb-inner {
+        max-width: 1000px;
+        margin-inline: auto;
+      }
+      .blurb-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 7px 14px;
+        border: 1px solid #e7cba059;
+        border-radius: 50px;
+        color: var(--gold);
+        background: #e7cba009;
+        font-size: 0.7rem;
+        font-weight: 850;
+        letter-spacing: 2.3px;
+        text-transform: uppercase;
+      }
+      .blurb-label::before {
+        content: "✦";
+        color: var(--rose);
+      }
+      #blurb .section-title {
+        margin: 25px 0 18px;
+        font-size: clamp(2.8rem, 6.7vw, 5.5rem);
+        line-height: 1.06;
+        letter-spacing: -0.04em;
+      }
+      .blurb-divider {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        width: fit-content;
+        margin: 25px 0 35px;
+        color: var(--rose);
+        font-size: 1.2rem;
+        letter-spacing: 8px;
+      }
+      .blurb-divider::before,
+      .blurb-divider::after {
+        content: "";
+        width: clamp(30px, 8vw, 90px);
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--gold));
+      }
+      .blurb-divider::after {
+        transform: rotate(180deg);
+      }
+      .blurb-copy {
+        max-width: 900px;
+        padding-left: 28px;
+        border-left: 2px solid #d9a0b7a6;
+        font-family: var(--story);
+      }
+      .blurb-copy p {
+        margin: 0 0 26px;
+        color: #d4cada;
+        font-size: clamp(1.05rem, 1.65vw, 1.3rem);
+        line-height: 1.95;
+        letter-spacing: 0;
+      }
+      .blurb-copy p:last-child {
+        margin-bottom: 0;
+      }
+      .blurb-copy .blurb-opening {
+        color: var(--text);
+        font-size: clamp(1.15rem, 2vw, 1.45rem);
+      }
+      .orange-i {
+        float: left;
+        color: #ff8c00;
+        font-family: var(--display);
+        font-size: 3.55em;
+        font-weight: 800;
+        line-height: 0.95;
+        margin: 0.06em 0.12em 0 0;
+      }
+      .blurb-copy .blurb-ending {
+        margin-top: 34px;
+        padding: 23px 26px;
+        border: 1px solid #e7cba03b;
+        border-radius: 15px;
+        color: #f0d8e5;
+        background: linear-gradient(120deg, #a78bfa17, #d9a0a912);
+        font-size: clamp(1.08rem, 1.8vw, 1.4rem);
+        font-style: italic;
+      }
+      .blurb-bottom {
+        margin-top: 30px;
+        color: var(--gold);
+        font-size: 0.75rem;
+        font-weight: 750;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .characters {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .character {
+        padding: 23px;
+        min-width: 0;
+        transition:
+          transform 0.22s,
+          border-color 0.22s,
+          background 0.22s;
+      }
+      .character:hover {
+        transform: translateY(-4px);
+        border-color: #a78bfa80;
+        background: linear-gradient(145deg, #201832, #100e18);
+      }
+      .symbol {
+        font-size: 1.65rem;
+        color: var(--gold);
+      }
+      .character h3,
+      .author-box h3 {
+        font-family: var(--display);
+        line-height: 1.4;
+      }
+      .character h3 {
+        font-size: 1.05rem;
+        margin: 10px 0 4px;
+      }
+      .role {
+        font-size: 0.68rem;
+        color: var(--rose);
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      .character p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+      }
+      .mystery {
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: clamp(25px, 4vw, 40px);
+        background:
+          radial-gradient(ellipse at 100% 0%, #49306c80, transparent 48%),
+          var(--panel);
+      }
+      .tags {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .tag {
+        border: 1px solid var(--border);
+        border-radius: 30px;
+        padding: 6px 12px;
+        color: #dfd3ee;
+        font-size: 0.8rem;
+        background: #ffffff04;
+      }
+      .author-grid {
+        display: grid;
+        grid-template-columns: 140px minmax(0, 1fr);
+        gap: 25px;
+        align-items: start;
+        margin-top: 28px;
+      }
+      .monogram {
+        aspect-ratio: 1;
+        display: grid;
+        place-items: center;
+        border-radius: 18px;
+        background: linear-gradient(140deg, #a78bfa38, #d9a0a920);
+        border: 1px solid var(--border);
+        color: var(--gold);
+        font: 900 3.6rem var(--display);
+      }
+      .author-box {
+        padding: 28px;
+      }
+      .author-box h3 {
+        margin-top: 0;
+        font-size: 1.55rem;
+      }
+      .author-box p:last-child {
+        margin-bottom: 0;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 28px 0;
+        font-size: 0.8rem;
+        color: #9388a5;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      footer strong {
+        color: var(--text);
+      }
+      /* Cinematic story splash: pack, run, escape the noise, finally get home */
+      #intro {
+        position: fixed;
+        inset: 0;
+        z-index: 500;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        text-align: center;
+        padding: clamp(18px, 4vw, 36px);
+        background: #090811;
+        isolation: isolate;
+        transition:
+          opacity 0.7s,
+          visibility 0.7s;
+      }
+      #intro.done {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .intro-scene {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background: linear-gradient(
+          180deg,
+          #171126 0%,
+          #100d1a 62%,
+          #08070e 100%
+        );
+        z-index: -1;
+      }
+      .hall-glow {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse at 50% 34%, #59407888, transparent 55%),
+          linear-gradient(
+            90deg,
+            #08070ed9,
+            transparent 25%,
+            transparent 75%,
+            #08070ed9
+          );
+      }
+      .hall-ceiling {
+        position: absolute;
+        left: -15%;
+        right: -15%;
+        top: -35%;
+        height: 75%;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 12%,
+            #a78bfa12 12.2% 12.5%,
+            transparent 12.7% 25%
+          ),
+          linear-gradient(#08070c, #29203b);
+        clip-path: polygon(0 0, 100% 0, 68% 100%, 32% 100%);
+      }
+      .hall-floor {
+        position: absolute;
+        left: -30%;
+        right: -30%;
+        bottom: -30%;
+        height: 67%;
+        background:
+          repeating-linear-gradient(
+            0deg,
+            transparent 0 38px,
+            #d9a0b715 39px 41px
+          ),
+          linear-gradient(180deg, #2b203c, #09080f);
+        clip-path: polygon(34% 0, 66% 0, 100% 100%, 0 100%);
+        animation: floorRush 1.05s linear infinite;
+      }
+      .hallway-doors {
+        position: absolute;
+        inset: 8% -10% 18%;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 8%,
+            #c4a5ff14 8.2% 8.5%,
+            transparent 8.7% 16%
+          ),
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 15%,
+            #08070c 15.2% 16%,
+            transparent 16.2% 31%
+          );
+        transform: perspective(320px) rotateX(3deg);
+        animation: doorsRush 1.8s linear infinite;
+      }
+      .exit-door {
+        position: absolute;
+        left: 50%;
+        top: 21%;
+        width: clamp(72px, 13vw, 150px);
+        height: clamp(105px, 22vh, 220px);
+        transform: translateX(-50%);
+        border: 2px solid #e7cba0aa;
+        border-radius: 5px 5px 0 0;
+        background: linear-gradient(180deg, #f8dcae, #c7a5fa 48%, #fff0d9);
+        box-shadow: 0 0 55px #e7cba055;
+        animation: homeDoor 7.4s both;
+      }
+      .exit-door:before {
+        content: "HOME";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        color: #22182e;
+        font: 900 clamp(8px, 1.1vw, 12px) var(--ui);
+        letter-spacing: 2px;
+      }
+      .exit-door:after {
+        content: "";
+        position: absolute;
+        right: 10%;
+        top: 52%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #2a1b3c;
+      }
+      .locker {
+        position: absolute;
+        top: 15%;
+        bottom: 20%;
+        width: 18%;
+        border: 1px solid #a78bfa32;
+        background: repeating-linear-gradient(
+          180deg,
+          #211a30 0 16%,
+          #a78bfa24 16.4% 17%,
+          #171323 17.5% 32%
+        );
+        box-shadow: inset 0 0 18px #0008;
+      }
+      .locker.left {
+        left: -2%;
+        transform: perspective(240px) rotateY(17deg);
+      }
+      .locker.right {
+        right: -2%;
+        transform: perspective(240px) rotateY(-17deg);
+      }
+      .thought {
+        position: absolute;
+        top: 15%;
+        padding: 8px 13px;
+        border: 1px solid #d9a0b76b;
+        border-radius: 18px;
+        background: #130f20d9;
+        color: #f8eaf3;
+        font-size: clamp(0.62rem, 1.3vw, 0.85rem);
+        font-weight: 800;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 30px #0006;
+        animation: thoughtPanic 5.8s both;
+      }
+      .thought.one {
+        left: 9%;
+        --tilt: -9deg;
+      }
+      .thought.two {
+        right: 8%;
+        top: 29%;
+        --tilt: 8deg;
+        animation-delay: 0.5s;
+      }
+      .thought.three {
+        left: 15%;
+        top: 43%;
+        --tilt: 5deg;
+        animation-delay: 1s;
+      }
+      .runner {
+        position: absolute;
+        left: 50%;
+        bottom: 17%;
+        width: clamp(80px, 15vw, 150px);
+        height: clamp(150px, 30vh, 270px);
+        transform: translateX(-50%);
+        animation: runnerEscape 7.4s both;
+        filter: drop-shadow(0 12px 20px #0009);
+      }
+      .runner-head {
+        position: absolute;
+        z-index: 3;
+        left: 38%;
+        top: 2%;
+        width: 31%;
+        aspect-ratio: 1;
+        border-radius: 46% 48% 44% 45%;
+        background: #d6a17f;
+        border: 2px solid #f4d0ad;
+        box-shadow: inset -7px -3px #8d5a59;
+      }
+      .runner-hair {
+        position: absolute;
+        z-index: 4;
+        left: 34%;
+        top: 0;
+        width: 38%;
+        height: 19%;
+        border-radius: 55% 55% 20% 25%;
+        background: #20162b;
+        transform: rotate(-12deg);
+      }
+      .runner-body {
+        position: absolute;
+        left: 31%;
+        top: 24%;
+        width: 44%;
+        height: 38%;
+        border-radius: 18px 18px 10px 10px;
+        background: linear-gradient(100deg, #a78bfa, #62459c);
+        border: 2px solid #d8c4ff;
+        transform: rotate(-9deg);
+      }
+      .runner-bag {
+        position: absolute;
+        z-index: 2;
+        left: 13%;
+        top: 29%;
+        width: 30%;
+        height: 31%;
+        border-radius: 10px 10px 13px 13px;
+        background: linear-gradient(135deg, #d9a0b7, #8d557d);
+        border: 2px solid #f2c5d7;
+        transform: rotate(-18deg);
+        box-shadow: inset 0 0 0 4px #402744;
+      }
+      .runner-bag:before {
+        content: "";
+        position: absolute;
+        left: 23%;
+        right: 23%;
+        top: -9%;
+        height: 14%;
+        border: 2px solid #e7cba0;
+        border-bottom: 0;
+        border-radius: 8px 8px 0 0;
+      }
+      .runner-arm {
+        position: absolute;
+        top: 31%;
+        width: 13%;
+        height: 28%;
+        border-radius: 20px;
+        background: #d6a17f;
+        transform-origin: top center;
+      }
+      .runner-arm.left {
+        left: 25%;
+        transform: rotate(38deg);
+        animation: armLeft 0.38s ease-in-out infinite alternate;
+      }
+      .runner-arm.right {
+        right: 18%;
+        transform: rotate(-46deg);
+        animation: armRight 0.38s ease-in-out infinite alternate;
+      }
+      .runner-leg {
+        position: absolute;
+        top: 56%;
+        width: 15%;
+        height: 35%;
+        border-radius: 12px;
+        background: #242037;
+        transform-origin: top center;
+      }
+      .runner-leg.left {
+        left: 35%;
+        animation: legLeft 0.36s ease-in-out infinite alternate;
+      }
+      .runner-leg.right {
+        left: 57%;
+        animation: legRight 0.36s ease-in-out infinite alternate;
+      }
+      .runner-shoe {
+        position: absolute;
+        bottom: 3%;
+        width: 24%;
+        height: 8%;
+        border-radius: 9px 15px 5px 5px;
+        background: #f0e6ed;
+      }
+      .runner-shoe.left {
+        left: 24%;
+      }
+      .runner-shoe.right {
+        right: 11%;
+      }
+      .flying-paper {
+        position: absolute;
+        width: clamp(18px, 3vw, 34px);
+        height: clamp(24px, 4vw, 44px);
+        background: #f8f0dc;
+        border-radius: 2px;
+        box-shadow: 0 0 14px #fff2;
+        animation: paperFly 2.2s ease-in-out infinite;
+      }
+      .flying-paper:after {
+        content: "≋";
+        color: #8d77b5;
+        font-size: 14px;
+        display: block;
+        margin-top: 2px;
+      }
+      .paper-a {
+        left: 24%;
+        top: 48%;
+        animation-delay: -0.7s;
+      }
+      .paper-b {
+        right: 23%;
+        top: 56%;
+        animation-delay: -1.4s;
+      }
+      .paper-c {
+        right: 32%;
+        top: 17%;
+        animation-delay: -0.2s;
+      }
+      .packing-card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: min(84vw, 560px);
+        transform: translate(-50%, -50%);
+        padding: 16px 22px;
+        border: 1px solid #d9a0b75c;
+        border-radius: 16px;
+        background: #0c0917df;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 70px #0008;
+        animation: packingBeat 7.4s both;
+      }
+      .packing-card .packing-label {
+        color: var(--gold);
+        font-size: 0.7rem;
+        font-weight: 900;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .packing-card .packing-line {
+        margin-top: 5px;
+        color: #fff0f5;
+        font: 800 clamp(1.15rem, 3vw, 2rem)/1.25 var(--display);
+        letter-spacing: 0.02em;
+      }
+      .packing-card .packing-small {
+        margin-top: 5px;
+        color: #c8bbd8;
+        font-size: 0.78rem;
+        letter-spacing: 0.7px;
+      }
+      .intro-inner {
+        position: relative;
+        z-index: 5;
+        max-width: 900px;
+        padding-top: min(37vh, 300px);
+        opacity: 0;
+        animation: titleArrive 7.4s both;
+      }
+      .intro-icon {
+        width: 42px;
+        height: 42px;
+        color: var(--gold);
+        margin-bottom: 4px;
+        filter: drop-shadow(0 0 18px #e7cba080);
+      }
+      .intro-title {
+        font-size: clamp(2rem, 7.4vw, 5.2rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+        margin: 8px 0 12px;
+        text-shadow: 0 8px 35px #0009;
+      }
+      .intro-sub {
+        color: #e1d5e8;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 12px #000;
+      }
+      .skip {
+        position: absolute;
+        z-index: 10;
+        right: 20px;
+        bottom: 20px;
+        background: #100d1bcc;
+        color: white;
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        padding: 9px 13px;
+        cursor: pointer;
+        backdrop-filter: blur(8px);
+      }
+      @keyframes floorRush {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 82px;
+        }
+      }
+      @keyframes doorsRush {
+        0% {
+          transform: perspective(320px) rotateX(3deg) scale(1);
+        }
+        100% {
+          transform: perspective(320px) rotateX(3deg) scale(1.12);
+        }
+      }
+      @keyframes homeDoor {
+        0%,
+        58% {
+          opacity: 0;
+          transform: translateX(-50%) scale(0.55);
+        }
+        72% {
+          opacity: 1;
+          transform: translateX(-50%) scale(1.15);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(-50%) scale(1);
+        }
+      }
+      @keyframes runnerEscape {
+        0%,
+        16% {
+          transform: translateX(-50%) translateY(8px) scale(0.82);
+          opacity: 0;
+        }
+        24% {
+          opacity: 1;
+        }
+        35%,
+        60% {
+          transform: translateX(-50%) translateY(0) scale(1);
+        }
+        78% {
+          transform: translateX(-50%) translateY(-8px) scale(1.08);
+        }
+        100% {
+          transform: translateX(-50%) translateY(-4px) scale(1.08);
+        }
+      }
+      @keyframes armLeft {
+        to {
+          transform: rotate(-35deg);
+        }
+      }
+      @keyframes armRight {
+        to {
+          transform: rotate(30deg);
+        }
+      }
+      @keyframes legLeft {
+        to {
+          transform: rotate(-32deg);
+        }
+      }
+      @keyframes legRight {
+        to {
+          transform: rotate(38deg);
+        }
+      }
+      @keyframes paperFly {
+        0%,
+        100% {
+          transform: translate(0, 0) rotate(0);
+          opacity: 0.15;
+        }
+        50% {
+          transform: translate(-38px, -55px) rotate(35deg);
+          opacity: 1;
+        }
+      }
+      @keyframes thoughtPanic {
+        0%,
+        15% {
+          opacity: 0;
+          transform: scale(0.65) rotate(var(--tilt, 0deg));
+        }
+        25%,
+        60% {
+          opacity: 1;
+          transform: scale(1) rotate(var(--tilt, 0deg));
+        }
+        78%,
+        100% {
+          opacity: 0;
+          transform: scale(0.75) rotate(var(--tilt, 0deg));
+        }
+      }
+      @keyframes packingBeat {
+        0%,
+        15% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        22%,
+        35% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.88);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.88);
+        }
+      }
+      @keyframes titleArrive {
+        0%,
+        68% {
+          opacity: 0;
+          transform: translateY(24px) scale(0.96);
+        }
+        80%,
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      @media (max-width: 620px) {
+        .packing-card {
+          top: 43%;
+          padding: 13px 15px;
+        }
+        .intro-inner {
+          padding-top: 46vh;
+        }
+        .intro-icon {
+          width: 32px;
+          height: 32px;
+        }
+        .thought.one {
+          left: 4%;
+        }
+        .thought.two {
+          right: 4%;
+        }
+        .thought.three {
+          left: 6%;
+        }
+        .runner {
+          bottom: 16%;
+        }
+        .intro-title {
+          font-size: clamp(1.8rem, 8.2vw, 3.3rem);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #intro .hall-floor,
+        #intro .hallway-doors,
+        #intro .exit-door,
+        #intro .runner,
+        #intro .thought,
+        #intro .flying-paper,
+        #intro .packing-card,
+        #intro .intro-inner,
+        #intro .runner-arm,
+        #intro .runner-leg {
+          animation: none !important;
+        }
+        #intro .packing-card {
+          opacity: 0;
+        }
+        #intro .intro-inner {
+          opacity: 1;
+          transform: none;
+        }
+      }
 
-    .reveal{opacity:0;transform:translateY(14px);transition:opacity .65s ease,transform .65s ease}.reveal.show{opacity:1;transform:none}
-    @media(max-width:850px){:root{--nav-h:72px}.hero-grid{grid-template-columns:1fr;gap:28px}.hero-copy{max-width:720px}.cover-wrap{max-width:450px;margin:auto}.story-grid{grid-template-columns:1fr}.info-box{max-width:none}.characters{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks{gap:14px;font-size:.8rem}}
-    @media(max-width:620px){.container{width:91%}.logo{font-size:.66rem;letter-spacing:.08em}.logo-bottom{letter-spacing:.14em}.menu{display:block;flex-shrink:0}.navlinks{display:none;position:absolute;top:calc(var(--nav-h) - 1px);left:0;right:0;padding:20px 5%;background:rgba(11,9,19,.98);border-bottom:1px solid var(--border);flex-direction:column;align-items:stretch;gap:0;font-size:.95rem}.navlinks.open{display:flex}.navlinks a{padding:10px 0}.hero{padding:55px 0}.hero-grid{gap:22px}h1{font-size:clamp(2.25rem,10.5vw,3.6rem);letter-spacing:-.04em}.cover-wrap{padding:14px}.cover{width:min(78%,320px)}section{padding:58px 0}.section-title{letter-spacing:-.025em}.characters{grid-template-columns:1fr}.author-grid{grid-template-columns:1fr}.monogram{width:100px}.mystery{padding:25px}#blurb{padding:65px 0 75px}#blurb .section-title{letter-spacing:-.03em}.blurb-copy{padding-left:18px}.blurb-copy p{font-size:1.04rem;line-height:1.85;margin-bottom:22px}.blurb-copy .blurb-opening{font-size:1.16rem}.orange-i{font-size:3.1em}.blurb-copy .blurb-ending{padding:18px}.author-box{padding:22px}footer .container{display:block}footer .container span{display:block;margin:5px 0}}
-    @media(max-width:360px){.logo{font-size:.58rem}.logo-bottom{letter-spacing:.1em}.actions .btn{width:100%}.intro-title{letter-spacing:-.05em}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}.cover{transform:none}}
-  </style>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
-  <div id="intro" aria-label="Cinematic intro: Yaya packs his bag, races through the school, and finally gets home">
-    <div class="intro-scene" aria-hidden="true">
-      <div class="hall-ceiling"></div><div class="hallway-doors"></div><div class="hall-floor"></div><div class="hall-glow"></div>
-      <div class="locker left"></div><div class="locker right"></div><div class="exit-door"></div>
-      <div class="thought one">HOME. NOW.</div><div class="thought two">WHY IS IT SO LOUD?</div><div class="thought three">JUST GET TO THE EXIT!</div>
-      <div class="flying-paper paper-a"></div><div class="flying-paper paper-b"></div><div class="flying-paper paper-c"></div>
-      <div class="runner">
-        <div class="runner-bag"></div><div class="runner-head"></div><div class="runner-hair"></div><div class="runner-body"></div>
-        <div class="runner-arm left"></div><div class="runner-arm right"></div><div class="runner-leg left"><div class="runner-shoe left"></div></div><div class="runner-leg right"><div class="runner-shoe right"></div></div>
+      .reveal {
+        opacity: 0;
+        transform: translateY(14px);
+        transition:
+          opacity 0.65s ease,
+          transform 0.65s ease;
+      }
+      .reveal.show {
+        opacity: 1;
+        transform: none;
+      }
+      @media (max-width: 850px) {
+        :root {
+          --nav-h: 72px;
+        }
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+        .hero-copy {
+          max-width: 720px;
+        }
+        .cover-wrap {
+          max-width: 450px;
+          margin: auto;
+        }
+        .story-grid {
+          grid-template-columns: 1fr;
+        }
+        .info-box {
+          max-width: none;
+        }
+        .characters {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .navlinks {
+          gap: 14px;
+          font-size: 0.8rem;
+        }
+      }
+      @media (max-width: 620px) {
+        .container {
+          width: 91%;
+        }
+        .logo {
+          font-size: 0.66rem;
+          letter-spacing: 0.08em;
+        }
+        .logo-bottom {
+          letter-spacing: 0.14em;
+        }
+        .menu {
+          display: block;
+          flex-shrink: 0;
+        }
+        .navlinks {
+          display: none;
+          position: absolute;
+          top: calc(var(--nav-h) - 1px);
+          left: 0;
+          right: 0;
+          padding: 20px 5%;
+          background: rgba(11, 9, 19, 0.98);
+          border-bottom: 1px solid var(--border);
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0;
+          font-size: 0.95rem;
+        }
+        .navlinks.open {
+          display: flex;
+        }
+        .navlinks a {
+          padding: 10px 0;
+        }
+        .hero {
+          padding: 55px 0;
+        }
+        .hero-grid {
+          gap: 22px;
+        }
+        h1 {
+          font-size: clamp(2.25rem, 10.5vw, 3.6rem);
+          letter-spacing: -0.04em;
+        }
+        .cover-wrap {
+          padding: 14px;
+        }
+        .cover {
+          width: min(78%, 320px);
+        }
+        section {
+          padding: 58px 0;
+        }
+        .section-title {
+          letter-spacing: -0.025em;
+        }
+        .characters {
+          grid-template-columns: 1fr;
+        }
+        .author-grid {
+          grid-template-columns: 1fr;
+        }
+        .monogram {
+          width: 100px;
+        }
+        .mystery {
+          padding: 25px;
+        }
+        #blurb {
+          padding: 65px 0 75px;
+        }
+        #blurb .section-title {
+          letter-spacing: -0.03em;
+        }
+        .blurb-copy {
+          padding-left: 18px;
+        }
+        .blurb-copy p {
+          font-size: 1.04rem;
+          line-height: 1.85;
+          margin-bottom: 22px;
+        }
+        .blurb-copy .blurb-opening {
+          font-size: 1.16rem;
+        }
+        .orange-i {
+          font-size: 3.1em;
+        }
+        .blurb-copy .blurb-ending {
+          padding: 18px;
+        }
+        .author-box {
+          padding: 22px;
+        }
+        footer .container {
+          display: block;
+        }
+        footer .container span {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+      @media (max-width: 360px) {
+        .logo {
+          font-size: 0.58rem;
+        }
+        .logo-bottom {
+          letter-spacing: 0.1em;
+        }
+        .actions .btn {
+          width: 100%;
+        }
+        .intro-title {
+          letter-spacing: -0.05em;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          scroll-behavior: auto !important;
+          transition: none !important;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+        .cover {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+    <div
+      id="intro"
+      aria-label="Cinematic intro: Yaya packs his bag, races through the school, and finally gets home"
+    >
+      <div class="intro-scene" aria-hidden="true">
+        <div class="hall-ceiling"></div>
+        <div class="hallway-doors"></div>
+        <div class="hall-floor"></div>
+        <div class="hall-glow"></div>
+        <div class="locker left"></div>
+        <div class="locker right"></div>
+        <div class="exit-door"></div>
+        <div class="thought one">HOME. NOW.</div>
+        <div class="thought two">WHY IS IT SO LOUD?</div>
+        <div class="thought three">JUST GET TO THE EXIT!</div>
+        <div class="flying-paper paper-a"></div>
+        <div class="flying-paper paper-b"></div>
+        <div class="flying-paper paper-c"></div>
+        <div class="runner">
+          <div class="runner-bag"></div>
+          <div class="runner-head"></div>
+          <div class="runner-hair"></div>
+          <div class="runner-body"></div>
+          <div class="runner-arm left"></div>
+          <div class="runner-arm right"></div>
+          <div class="runner-leg left">
+            <div class="runner-shoe left"></div>
+          </div>
+          <div class="runner-leg right">
+            <div class="runner-shoe right"></div>
+          </div>
+        </div>
+        <div class="packing-card">
+          <div class="packing-label">MISSION: GET HOME</div>
+          <div class="packing-line">PACK THE BAG. RUN FOR IT.</div>
+          <div class="packing-small">
+            Books? Check. Phone? Check. Sanity? ...loading.
+          </div>
+        </div>
       </div>
-      <div class="packing-card"><div class="packing-label">MISSION: GET HOME</div><div class="packing-line">PACK THE BAG. RUN FOR IT.</div><div class="packing-small">Books? Check. Phone? Check. Sanity? ...loading.</div></div>
+      <div class="intro-inner">
+        <svg
+          class="intro-icon"
+          viewBox="0 0 64 64"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M32 4 39 24 60 32 39 39 32 60 25 39 4 32 25 24 32 4Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle cx="32" cy="32" r="10" stroke="#d9a0a9" stroke-width="1.5" />
+        </svg>
+        <div class="eyebrow">An original novel by Yaya</div>
+        <h2 class="intro-title">
+          A BOY IN A<br /><span class="gradient">GIRL PARADE ARMY</span>
+        </h2>
+        <div class="intro-sub">
+          He survived the school day. Now he just wants to get home.
+        </div>
+      </div>
+      <button class="skip" id="skip" type="button">Skip intro ↗</button>
     </div>
-    <div class="intro-inner">
-      <svg class="intro-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 4 39 24 60 32 39 39 32 60 25 39 4 32 25 24 32 4Z" stroke="currentColor" stroke-width="1.5"/><circle cx="32" cy="32" r="10" stroke="#d9a0a9" stroke-width="1.5"/></svg>
-      <div class="eyebrow">An original novel by Yaya</div><h2 class="intro-title">A BOY IN A<br><span class="gradient">GIRL PARADE ARMY</span></h2><div class="intro-sub">He survived the school day. Now he just wants to get home.</div>
+    <header>
+      <nav class="container" aria-label="Main navigation">
+        <a
+          class="logo"
+          href="#home"
+          aria-label="A Boy in a Girl Parade Army — Home"
+          ><span class="logo-top">A BOY IN A</span
+          ><span class="logo-bottom">GIRL PARADE ARMY</span></a
+        >
+        <button
+          class="menu"
+          id="menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="links"
+        >
+          Menu ☰
+        </button>
+        <div class="navlinks" id="links">
+          <a href="#story">The Story</a>
+          <a href="#blurb">The Blurb</a>
+          <a href="#characters">Characters</a>
+          <a href="#world">The World</a>
+          <a href="#blurbpreview">Blurb Preview</a>
+          <a href="#author">The Author</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow">An anime-inspired novel</div>
+            <h1>A BOY IN A <span class="gradient">GIRL PARADE ARMY</span></h1>
+            <p class="lead">
+              One boy. One academy. Absolute chaos. Step into a story of
+              unpredictable school days, unforgettable friendships, hilarious
+              moments, and mysteries waiting to be uncovered.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="#story"
+                >Explore the story <span aria-hidden="true">↗</span></a
+              ><a class="btn secondary" href="#characters"
+                >Meet the characters</a
+              >
+            </div>
+            <div class="meta">
+              ✦ Original story &nbsp;·&nbsp; Anime-inspired &nbsp;·&nbsp;
+              Created by Yaya
+            </div>
+          </div>
+          <div class="cover-wrap reveal">
+            <div class="cover">
+              <img
+                id="coverImage"
+                src="cover.jpg"
+                alt="Cover artwork for A Boy in a Girl Parade Army"
+                width="900"
+                height="1350"
+              />
+              <div class="cover-fallback" id="coverFallback">
+                <div>
+                  <strong
+                    >A BOY IN A<br /><span class="gradient"
+                      >GIRL PARADE ARMY</span
+                    ></strong
+                  ><span>AN ORIGINAL NOVEL BY YAYA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="story">
+        <div class="container story-grid">
+          <aside class="info-box reveal">
+            <div class="eyebrow">Inside the novel</div>
+            <div class="number">01</div>
+            <h3>One unexpected story.</h3>
+            <p>
+              A school-life adventure where comedy, friendship, and mystery
+              collide.
+            </p>
+          </aside>
+          <div class="reveal">
+            <div class="eyebrow">The premise</div>
+            <h2 class="section-title">
+              Normal school life?<br /><span class="gradient"
+                >Not a chance.</span
+              >
+            </h2>
+            <p class="lead">
+              Yaya's academy experience is anything but ordinary—and every new
+              day brings another reason to question what “normal” even means.
+            </p>
+            <p>
+              From chaotic classroom moments to the friendships that hold the
+              squad together, the story follows a cast of memorable characters
+              through unexpected turns, strange secrets, and challenges that
+              test their loyalty.
+            </p>
+            <p>
+              Underneath the comedy is a world full of questions: who can be
+              trusted, what is hiding behind the academy's mysteries, and how
+              far will this group go to protect each other?
+            </p>
+            <div class="quote">“One boy. One academy. Absolute chaos.”</div>
+            <p>
+              A story about imagination, growing up, friendship, and making your
+              own place in a world that never stops surprising you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="blurb" aria-labelledby="blurb-title">
+        <div class="container">
+          <div class="blurb-inner reveal">
+            <div class="blurb-label">Spoiler-free</div>
+            <h2 class="section-title" id="blurb-title">
+              The <span class="gradient">Story</span>
+            </h2>
+            <div class="blurb-divider" aria-hidden="true">❀ ✦ ❀</div>
+            <div class="blurb-copy">
+              <p class="blurb-opening">
+                <span class="orange-i" aria-hidden="true">I</span
+                ><span
+                  class="sr-only"
+                  style="
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    white-space: nowrap;
+                    border: 0;
+                  "
+                  >I</span
+                >magine walking into school expecting an ordinary day — only to
+                discover you're the only boy in an entire school full of girls.
+                Welcome to Yaya's life.
+              </p>
+              <p>
+                Between unexpected friendships, hilarious classroom disasters,
+                fierce football battles, and a school that never runs out of
+                surprises, Yaya has just one mission: survive another day
+                without losing his mind. With Lara by his side, his best bro
+                Amir backing him up, and a growing circle of unforgettable
+                characters, every day becomes a new adventure.
+              </p>
+              <p>
+                But beneath the comedy and chaos, something stranger is waiting
+                — mysterious dreams, an impossible notebook, an infinity symbol
+                that keeps appearing where it shouldn't, and secrets that
+                connect the past to a future Yaya never expected.
+              </p>
+              <p class="blurb-ending">
+                A story about friendship, courage, keeping promises — and
+                discovering that even the most ridiculous adventure can change
+                your life.
+              </p>
+            </div>
+            <div class="blurb-bottom">
+              ❀ &nbsp; A Boy in a Girl Parade Army &nbsp; ❀
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="characters">
+        <div class="container">
+          <div class="reveal">
+            <div class="eyebrow">Meet the squad</div>
+            <h2 class="section-title">Every character has a story.</h2>
+            <p class="section-intro">
+              Meet the people who turn academy life into an unforgettable
+              adventure.
+            </p>
+          </div>
+          <div class="characters">
+            <article class="character reveal">
+              <div class="symbol" aria-hidden="true">✦</div>
+              <h3>Yaya</h3>
+              <div class="role">The protagonist</div>
+              <p>
+                The central voice of the story: imaginative, determined, and
+                always one unexpected event away from chaos.
+              </p>
+            </article>
+            <article class="character reveal">
+              <div class="symbol" aria-hidden="true">♡</div>
+              <h3>Lara</h3>
+              <div class="role">The close companion</div>
+              <p>
+                Known for her pink braids and green eyes, Lara brings warmth and
+                a steady presence to Yaya's unpredictable world.
+              </p>
+            </article>
+            <article class="character reveal">
+              <div class="symbol" aria-hidden="true">✧</div>
+              <h3>Amir Dolla Dolla</h3>
+              <div class="role">The best friend</div>
+              <p>
+                Yaya's loyal best friend and co-founder of the Survivors'
+                Alliance, ready for the next ridiculous situation.
+              </p>
+            </article>
+            <article class="character reveal">
+              <div class="symbol" aria-hidden="true">◇</div>
+              <h3>Avinia</h3>
+              <div class="role">A valued ally</div>
+              <p>
+                With blonde hair and blue eyes, Avinia is part of the close-knit
+                circle navigating the academy's twists together.
+              </p>
+            </article>
+            <article class="character reveal">
+              <div class="symbol" aria-hidden="true">☾</div>
+              <h3>Violetta Amethyst</h3>
+              <div class="role">The mystery</div>
+              <p>
+                Witty and intriguing, Violetta is tied to the secrets that give
+                the story a deeper, more mysterious edge.
+              </p>
+            </article>
+            <article class="character reveal">
+              <div class="symbol" aria-hidden="true">⌘</div>
+              <h3>Zayn the Mainframe</h3>
+              <div class="role">The unknown variable</div>
+              <p>
+                A mysterious figure connected to the Infinity Project, with
+                questions surrounding his role in the larger story.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="world">
+        <div class="container">
+          <div class="mystery reveal">
+            <div class="eyebrow">Beyond the classroom</div>
+            <h2 class="section-title">
+              Comedy on the surface.<br /><span class="gradient"
+                >Mystery underneath.</span
+              >
+            </h2>
+            <p>
+              The academy is only the beginning. Friendships, rivalries, hidden
+              projects, and unexpected twists give this universe room to
+              grow—one chapter at a time.
+            </p>
+            <div class="tags">
+              <span class="tag">School-life chaos</span
+              ><span class="tag">Friendship</span><span class="tag">Comedy</span
+              ><span class="tag">Mystery</span
+              ><span class="tag">Anime-inspired action</span
+              ><span class="tag">Football energy</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<section id="blurbpreview" aria-labelledby="blurbpreview-title">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">A glimpse inside</div>
+
+      <h2 class="section-title" id="blurbpreview-title">
+        Blurb <span class="gradient">Preview</span>
+      </h2>
+
+      <p class="section-intro">
+        Discover the story behind A Boy in a Girl Parade Army.
+      </p>
     </div>
-    <button class="skip" id="skip" type="button">Skip intro ↗</button>
+
+    <div class="cover-wrap reveal">
+      <div class="cover">
+        <img
+          src="blurb.jpg"
+          alt="A Boy in a Girl Parade Army — blurb preview"
+          width="900"
+          height="1350"
+        />
+      </div>
+    </div>
   </div>
-  <header><nav class="container" aria-label="Main navigation">
-    <a class="logo" href="#home" aria-label="A Boy in a Girl Parade Army — Home"><span class="logo-top">A BOY IN A</span><span class="logo-bottom">GIRL PARADE ARMY</span></a>
-    <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="links">Menu ☰</button>
-    <div class="navlinks" id="links"><a href="#story">The Story</a><a href="#blurb">The Blurb</a><a href="#characters">Characters</a><a href="#world">The World</a><a href="#author">The Author</a></div>
-  </nav></header>
-  <main id="main">
-    <section class="hero" id="home"><div class="container hero-grid">
-      <div class="hero-copy reveal"><div class="eyebrow">An anime-inspired novel</div><h1>A BOY IN A <span class="gradient">GIRL PARADE ARMY</span></h1><p class="lead">One boy. One academy. Absolute chaos. Step into a story of unpredictable school days, unforgettable friendships, hilarious moments, and mysteries waiting to be uncovered.</p><div class="actions"><a class="btn primary" href="#story">Explore the story <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#characters">Meet the characters</a></div><div class="meta">✦ Original story &nbsp;·&nbsp; Anime-inspired &nbsp;·&nbsp; Created by Yaya</div></div>
-      <div class="cover-wrap reveal"><div class="cover"><img id="coverImage" src="cover.jpg" alt="Cover artwork for A Boy in a Girl Parade Army" width="900" height="1350"><div class="cover-fallback" id="coverFallback"><div><strong>A BOY IN A<br><span class="gradient">GIRL PARADE ARMY</span></strong><span>AN ORIGINAL NOVEL BY YAYA</span></div></div></div></div>
-    </div></section>
-    <section id="story"><div class="container story-grid">
-      <aside class="info-box reveal"><div class="eyebrow">Inside the novel</div><div class="number">01</div><h3>One unexpected story.</h3><p>A school-life adventure where comedy, friendship, and mystery collide.</p></aside>
-      <div class="reveal"><div class="eyebrow">The premise</div><h2 class="section-title">Normal school life?<br><span class="gradient">Not a chance.</span></h2><p class="lead">Yaya's academy experience is anything but ordinary—and every new day brings another reason to question what “normal” even means.</p><p>From chaotic classroom moments to the friendships that hold the squad together, the story follows a cast of memorable characters through unexpected turns, strange secrets, and challenges that test their loyalty.</p><p>Underneath the comedy is a world full of questions: who can be trusted, what is hiding behind the academy's mysteries, and how far will this group go to protect each other?</p><div class="quote">“One boy. One academy. Absolute chaos.”</div><p>A story about imagination, growing up, friendship, and making your own place in a world that never stops surprising you.</p></div>
-    </div></section>
-    <section id="blurb" aria-labelledby="blurb-title"><div class="container"><div class="blurb-inner reveal"><div class="blurb-label">Spoiler-free</div><h2 class="section-title" id="blurb-title">The <span class="gradient">Story</span></h2><div class="blurb-divider" aria-hidden="true">❀ ✦ ❀</div><div class="blurb-copy">
-      <p class="blurb-opening"><span class="orange-i" aria-hidden="true">I</span><span class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">I</span>magine walking into school expecting an ordinary day — only to discover you're the only boy in an entire school full of girls. Welcome to Yaya's life.</p>
-      <p>Between unexpected friendships, hilarious classroom disasters, fierce football battles, and a school that never runs out of surprises, Yaya has just one mission: survive another day without losing his mind. With Lara by his side, his best bro Amir backing him up, and a growing circle of unforgettable characters, every day becomes a new adventure.</p>
-      <p>But beneath the comedy and chaos, something stranger is waiting — mysterious dreams, an impossible notebook, an infinity symbol that keeps appearing where it shouldn't, and secrets that connect the past to a future Yaya never expected.</p>
-      <p class="blurb-ending">A story about friendship, courage, keeping promises — and discovering that even the most ridiculous adventure can change your life.</p>
-    </div><div class="blurb-bottom">❀ &nbsp; A Boy in a Girl Parade Army &nbsp; ❀</div></div></div></section>
-    <section id="characters"><div class="container"><div class="reveal"><div class="eyebrow">Meet the squad</div><h2 class="section-title">Every character has a story.</h2><p class="section-intro">Meet the people who turn academy life into an unforgettable adventure.</p></div><div class="characters">
-      <article class="character reveal"><div class="symbol" aria-hidden="true">✦</div><h3>Yaya</h3><div class="role">The protagonist</div><p>The central voice of the story: imaginative, determined, and always one unexpected event away from chaos.</p></article>
-      <article class="character reveal"><div class="symbol" aria-hidden="true">♡</div><h3>Lara</h3><div class="role">The close companion</div><p>Known for her pink braids and green eyes, Lara brings warmth and a steady presence to Yaya's unpredictable world.</p></article>
-      <article class="character reveal"><div class="symbol" aria-hidden="true">✧</div><h3>Amir Dolla Dolla</h3><div class="role">The best friend</div><p>Yaya's loyal best friend and co-founder of the Survivors' Alliance, ready for the next ridiculous situation.</p></article>
-      <article class="character reveal"><div class="symbol" aria-hidden="true">◇</div><h3>Avinia</h3><div class="role">A valued ally</div><p>With blonde hair and blue eyes, Avinia is part of the close-knit circle navigating the academy's twists together.</p></article>
-      <article class="character reveal"><div class="symbol" aria-hidden="true">☾</div><h3>Violetta Amethyst</h3><div class="role">The mystery</div><p>Witty and intriguing, Violetta is tied to the secrets that give the story a deeper, more mysterious edge.</p></article>
-      <article class="character reveal"><div class="symbol" aria-hidden="true">⌘</div><h3>Zayn the Mainframe</h3><div class="role">The unknown variable</div><p>A mysterious figure connected to the Infinity Project, with questions surrounding his role in the larger story.</p></article>
-    </div></div></section>
-    <section id="world"><div class="container"><div class="mystery reveal"><div class="eyebrow">Beyond the classroom</div><h2 class="section-title">Comedy on the surface.<br><span class="gradient">Mystery underneath.</span></h2><p>The academy is only the beginning. Friendships, rivalries, hidden projects, and unexpected twists give this universe room to grow—one chapter at a time.</p><div class="tags"><span class="tag">School-life chaos</span><span class="tag">Friendship</span><span class="tag">Comedy</span><span class="tag">Mystery</span><span class="tag">Anime-inspired action</span><span class="tag">Football energy</span></div></div></div></section>
-    <section id="author"><div class="container"><div class="reveal"><div class="eyebrow">Behind the pages</div><h2 class="section-title">Meet the author.</h2><p class="section-intro">Every universe starts with an idea.</p></div><div class="author-grid reveal"><div class="monogram" aria-hidden="true">Y.</div><div class="author-box"><h3>Yaya ✍️</h3><p>Behind <em>A Boy in a Girl Parade Army</em> is Yaya, a young creative mind with a passion for storytelling, anime-inspired adventures, football, comedy, and mystery.</p><p>What started as an idea grew into a story filled with unforgettable characters, chaotic school moments, unexpected twists, and friendships that make every chapter count.</p><p>Yaya's goal is to bring imagination to life, create stories that keep readers curious, and build a world where every character has a story worth telling.</p><p style="color:var(--gold);font-weight:750">One imagination. Countless possibilities. One story at a time.</p><p><strong>Written and Made by Yaya.</strong></p></div></div></div></section>
-  </main>
-  <footer><div class="container"><span><strong>A BOY IN A GIRL PARADE ARMY</strong> · An original novel by Yaya</span><span>Made with imagination. © <span id="year"></span> Yaya.</span></div></footer>
-  <script>
-    (()=>{'use strict';
-      const intro=document.getElementById('intro');const skip=document.getElementById('skip');const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;let introTimer;
-      function closeIntro(){intro.classList.add('done');if(introTimer)clearTimeout(introTimer)}
-      // Show the splash screen on every page load, then dismiss it automatically.
-      // Reduced-motion preferences disable animation, not the splash screen itself.
-      if(!intro.classList.contains('done'))introTimer=setTimeout(closeIntro,reduceMotion?3200:7400);
-      skip.addEventListener('click',closeIntro);document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!intro.classList.contains('done'))closeIntro()});
-      const menu=document.getElementById('menu');const links=document.getElementById('links');
-      function setMenu(open){links.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'Close ✕':'Menu ☰'}
-      menu.addEventListener('click',()=>setMenu(!links.classList.contains('open')));links.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMenu(false)));
-      document.addEventListener('click',event=>{if(!links.contains(event.target)&&!menu.contains(event.target))setMenu(false)});
-      const progress=document.getElementById('readingProgress');let ticking=false;
-      function updateProgress(){const max=document.documentElement.scrollHeight-window.innerHeight;const percent=max>0?(window.scrollY/max)*100:0;progress.style.width=`${Math.min(100,Math.max(0,percent))}%`;ticking=false}
-      function requestProgress(){if(!ticking){window.requestAnimationFrame(updateProgress);ticking=true}}
-      window.addEventListener('scroll',requestProgress,{passive:true});window.addEventListener('resize',requestProgress);updateProgress();
-      document.getElementById('year').textContent=new Date().getFullYear();
-      const cover=document.getElementById('coverImage');const fallback=document.getElementById('coverFallback');cover.addEventListener('error',()=>{cover.style.display='none';fallback.style.display='grid'});cover.addEventListener('load',()=>{cover.style.display='block';fallback.style.display='none'});
-      const revealItems=document.querySelectorAll('.reveal');if('IntersectionObserver'in window&&!reduceMotion){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}}),{threshold:.12});revealItems.forEach(item=>observer.observe(item))}else{revealItems.forEach(item=>item.classList.add('show'))}
-      const navLinks=[...document.querySelectorAll('.navlinks a')];const sections=navLinks.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);if('IntersectionObserver'in window){const sectionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(link=>{if(link.getAttribute('href')==='#'+entry.target.id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current')})}}),{rootMargin:'-25% 0px -65% 0px'});sections.forEach(section=>sectionObserver.observe(section))}
-    })();
-  </script>
-</body>
+</section>
+
+      <section id="author">
+        <div class="container">
+          <div class="reveal">
+            <div class="eyebrow">Behind the pages</div>
+            <h2 class="section-title">Meet the author.</h2>
+            <p class="section-intro">Every universe starts with an idea.</p>
+          </div>
+          <div class="author-grid reveal">
+            <div class="monogram" aria-hidden="true">Y.</div>
+            <div class="author-box">
+              <h3>Yaya ✍️</h3>
+              <p>
+                Behind <em>A Boy in a Girl Parade Army</em> is Yaya, a young
+                creative mind with a passion for storytelling, anime-inspired
+                adventures, football, comedy, and mystery.
+              </p>
+              <p>
+                What started as an idea grew into a story filled with
+                unforgettable characters, chaotic school moments, unexpected
+                twists, and friendships that make every chapter count.
+              </p>
+              <p>
+                Yaya's goal is to bring imagination to life, create stories that
+                keep readers curious, and build a world where every character
+                has a story worth telling.
+              </p>
+              <p style="color: var(--gold); font-weight: 750">
+                One imagination. Countless possibilities. One story at a time.
+              </p>
+              <p><strong>Written and Made by Yaya.</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <span
+          ><strong>A BOY IN A GIRL PARADE ARMY</strong> · An original novel by
+          Yaya</span
+        ><span>Made with imagination. © <span id="year"></span> Yaya.</span>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        "use strict";
+        const intro = document.getElementById("intro");
+        const skip = document.getElementById("skip");
+        const reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        let introTimer;
+        function closeIntro() {
+          intro.classList.add("done");
+          if (introTimer) clearTimeout(introTimer);
+        }
+        // Show the splash screen on every page load, then dismiss it automatically.
+        // Reduced-motion preferences disable animation, not the splash screen itself.
+        if (!intro.classList.contains("done"))
+          introTimer = setTimeout(closeIntro, reduceMotion ? 3200 : 7400);
+        skip.addEventListener("click", closeIntro);
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && !intro.classList.contains("done"))
+            closeIntro();
+        });
+        const menu = document.getElementById("menu");
+        const links = document.getElementById("links");
+        function setMenu(open) {
+          links.classList.toggle("open", open);
+          menu.setAttribute("aria-expanded", String(open));
+          menu.textContent = open ? "Close ✕" : "Menu ☰";
+        }
+        menu.addEventListener("click", () =>
+          setMenu(!links.classList.contains("open")),
+        );
+        links
+          .querySelectorAll("a")
+          .forEach((link) =>
+            link.addEventListener("click", () => setMenu(false)),
+          );
+        document.addEventListener("click", (event) => {
+          if (!links.contains(event.target) && !menu.contains(event.target))
+            setMenu(false);
+        });
+        const progress = document.getElementById("readingProgress");
+        let ticking = false;
+        function updateProgress() {
+          const max =
+            document.documentElement.scrollHeight - window.innerHeight;
+          const percent = max > 0 ? (window.scrollY / max) * 100 : 0;
+          progress.style.width = `${Math.min(100, Math.max(0, percent))}%`;
+          ticking = false;
+        }
+        function requestProgress() {
+          if (!ticking) {
+            window.requestAnimationFrame(updateProgress);
+            ticking = true;
+          }
+        }
+        window.addEventListener("scroll", requestProgress, { passive: true });
+        window.addEventListener("resize", requestProgress);
+        updateProgress();
+        document.getElementById("year").textContent = new Date().getFullYear();
+        const cover = document.getElementById("coverImage");
+        const fallback = document.getElementById("coverFallback");
+        cover.addEventListener("error", () => {
+          cover.style.display = "none";
+          fallback.style.display = "grid";
+        });
+        cover.addEventListener("load", () => {
+          cover.style.display = "block";
+          fallback.style.display = "none";
+        });
+        const revealItems = document.querySelectorAll(".reveal");
+        if ("IntersectionObserver" in window && !reduceMotion) {
+          const observer = new IntersectionObserver(
+            (entries) =>
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("show");
+                  observer.unobserve(entry.target);
+                }
+              }),
+            { threshold: 0.12 },
+          );
+          revealItems.forEach((item) => observer.observe(item));
+        } else {
+          revealItems.forEach((item) => item.classList.add("show"));
+        }
+        const navLinks = [...document.querySelectorAll(".navlinks a")];
+        const sections = navLinks
+          .map((link) => document.querySelector(link.getAttribute("href")))
+          .filter(Boolean);
+        if ("IntersectionObserver" in window) {
+          const sectionObserver = new IntersectionObserver(
+            (entries) =>
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  navLinks.forEach((link) => {
+                    if (link.getAttribute("href") === "#" + entry.target.id)
+                      link.setAttribute("aria-current", "location");
+                    else link.removeAttribute("aria-current");
+                  });
+                }
+              }),
+            { rootMargin: "-25% 0px -65% 0px" },
+          );
+          sections.forEach((section) => sectionObserver.observe(section));
+        }
+      })();
+    </script>
+  </body>
 </html>
