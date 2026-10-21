@@ -1,0 +1,1799 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0913" />
+    <meta
+      name="description"
+      content="Create your own original character for A Boy in a Girl Parade Army."
+    />
+    <title>Make Your Character | A Boy in a Girl Parade Army</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0913;
+        --panel: #15111f;
+        --panel2: #1c1729;
+        --purple: #a78bfa;
+        --rose: #d9a0b7;
+        --gold: #e7cba0;
+        --text: #f8f2ed;
+        --muted: #b9afc5;
+        --border: rgba(215, 190, 255, 0.17);
+        --display: "Cinzel", Georgia, serif;
+        --story: "Lora", Georgia, serif;
+        --ui: "DM Sans", system-ui, sans-serif;
+        --max: 1120px;
+        --nav-h: 76px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+      }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 80% 0%, #26183d 0, transparent 38%),
+          var(--bg);
+        color: var(--text);
+        font-family: var(--ui);
+        font-size: 16px;
+        line-height: 1.7;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+      button,
+      a,
+      input,
+      select,
+      textarea {
+        -webkit-tap-highlight-color: transparent;
+      }
+      button:focus-visible,
+      a:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
+        outline: 2px solid var(--gold);
+        outline-offset: 3px;
+      }
+      .container {
+        width: min(var(--max), 90%);
+        margin-inline: auto;
+      }
+      .topline {
+        height: 3px;
+        background: linear-gradient(90deg, var(--purple), #f0abcf);
+        box-shadow: 0 0 14px #a78bfa70;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #0b0913e8;
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(16px);
+      }
+      nav {
+        min-height: var(--nav-h);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .logo {
+        display: flex;
+        flex-direction: column;
+        font: 900 0.9rem/1.25 var(--display);
+        letter-spacing: 0.1em;
+      }
+      .logo span:last-child {
+        color: var(--rose);
+        font-size: 0.75em;
+        letter-spacing: 0.2em;
+      }
+      .navlinks {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 600;
+      }
+      .navlinks a:hover,
+      .navlinks a[aria-current="page"] {
+        color: var(--gold);
+      }
+      .menu {
+        display: none;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 8px 12px;
+        background: #ffffff08;
+        color: var(--text);
+      }
+      .hero {
+        padding: 76px 0 38px;
+        text-align: center;
+      }
+      .eyebrow {
+        color: var(--gold);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      .hero h1 {
+        font: 800 clamp(2.2rem, 6vw, 4.4rem)/1.12 var(--display);
+        letter-spacing: -0.035em;
+        margin: 14px 0;
+      }
+      .gradient {
+        background: linear-gradient(100deg, #c4b5fd, #f0abcf 55%, #e7cba0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .hero p {
+        max-width: 700px;
+        margin: 0 auto;
+        color: var(--muted);
+        font: 1.08rem/1.8 var(--story);
+      }
+      .builder {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+        gap: 28px;
+        align-items: start;
+        padding: 28px 0 90px;
+      }
+      .panel {
+        background: linear-gradient(145deg, #191425f5, #100d19f5);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: clamp(20px, 3vw, 32px);
+        box-shadow: 0 22px 60px #0003;
+      }
+      .panel h2 {
+        font: 700 1.35rem var(--display);
+        margin: 0 0 5px;
+      }
+      .sub {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .field-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 17px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        min-width: 0;
+      }
+      .field.full {
+        grid-column: 1/-1;
+      }
+      label,
+      .field-label {
+        font-size: 0.84rem;
+        font-weight: 700;
+        color: #e9dfef;
+      }
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        border: 1px solid var(--border);
+        border-radius: 11px;
+        padding: 12px 13px;
+        color: var(--text);
+        background: #0d0a15;
+      }
+      .field textarea {
+        min-height: 90px;
+        resize: vertical;
+      }
+      .field input::placeholder,
+      .field textarea::placeholder {
+        color: #80758f;
+      }
+      .hint {
+        font-size: 0.76rem;
+        color: var(--muted);
+        margin-top: -3px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+        margin-top: 24px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        padding: 12px 19px;
+        font-weight: 800;
+        cursor: pointer;
+        transition:
+          transform 0.2s,
+          filter 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.08);
+      }
+      .btn-primary {
+        background: linear-gradient(110deg, #a78bfa, #d9a0b7);
+        color: #17111f;
+        box-shadow: 0 8px 24px #a78bfa30;
+      }
+      .btn-secondary {
+        background: #ffffff08;
+        border-color: var(--border);
+        color: var(--text);
+      }
+      .preview-panel {
+        position: sticky;
+        top: calc(var(--nav-h) + 22px);
+        overflow: hidden;
+      }
+      .preview-banner {
+        height: 8px;
+        background: linear-gradient(90deg, #a78bfa, #d9a0b7, #e7cba0);
+        margin: -32px -32px 26px;
+      }
+      .character-card {
+        position: relative;
+        border: 1px solid #d9a0b733;
+        border-radius: 18px;
+        overflow: hidden;
+        background:
+          radial-gradient(ellipse at 50% 0%, #46305e 0, transparent 55%),
+          linear-gradient(160deg, #21172e, #100d18 75%);
+        padding: 25px 22px 22px;
+        text-align: center;
+      }
+      .sigil {
+        width: 94px;
+        height: 94px;
+        margin: 0 auto 17px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #e7cba080;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #a78bfa22, #e9a6cf18);
+        font-size: 2.6rem;
+        box-shadow: 0 0 40px #a78bfa18;
+      }
+      .preview-kicker {
+        font-size: 0.7rem;
+        letter-spacing: 0.22em;
+        color: var(--gold);
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .character-card h3 {
+        font: 800 clamp(1.6rem, 3vw, 2.1rem)/1.2 var(--display);
+        margin: 7px 0 4px;
+        overflow-wrap: anywhere;
+      }
+      .nickname {
+        color: var(--rose);
+        font: italic 1rem var(--story);
+        min-height: 1.5em;
+      }
+      .role-pill {
+        display: inline-flex;
+        margin: 15px auto 18px;
+        border: 1px solid #a78bfa66;
+        background: #a78bfa14;
+        border-radius: 999px;
+        padding: 5px 12px;
+        color: #d8c8ff;
+        font-size: 0.78rem;
+        font-weight: 700;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        text-align: left;
+      }
+      .stat {
+        background: #ffffff06;
+        border: 1px solid #ffffff0c;
+        border-radius: 12px;
+        padding: 10px 12px;
+        min-width: 0;
+      }
+      .stat span {
+        display: block;
+        color: var(--muted);
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .stat strong {
+        display: block;
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+      }
+      .bio {
+        font: 0.96rem/1.75 var(--story);
+        color: #e2d8e9;
+        text-align: left;
+        margin: 18px 0 0;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+      }
+      .empty-note {
+        color: var(--muted);
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 14px 0 0;
+      }
+      .message {
+        min-height: 1.5em;
+        color: var(--gold);
+        font-size: 0.83rem;
+        margin: 12px 0 0;
+      }
+      .footer {
+        border-top: 1px solid var(--border);
+        padding: 26px 0 36px;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+      .footer .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .footer strong {
+        color: var(--text);
+      }
+      @media (max-width: 820px) {
+        .builder {
+          grid-template-columns: 1fr;
+        }
+        .preview-panel {
+          position: static;
+        }
+        .navlinks {
+          gap: 13px;
+          font-size: 0.8rem;
+        }
+      }
+      @media (max-width: 620px) {
+        :root {
+          --nav-h: 68px;
+        }
+        .navlinks {
+          display: none;
+          position: absolute;
+          top: calc(var(--nav-h) - 1px);
+          left: 0;
+          right: 0;
+          padding: 18px 5%;
+          background: #100d1bf7;
+          border-bottom: 1px solid var(--border);
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .navlinks.open {
+          display: flex;
+        }
+        .navlinks a {
+          padding: 5px 0;
+        }
+        .menu {
+          display: block;
+        }
+        .hero {
+          padding-top: 52px;
+        }
+        .field-grid {
+          grid-template-columns: 1fr;
+        }
+        .field.full {
+          grid-column: auto;
+        }
+        .preview-banner {
+          margin: -22px -22px 23px;
+        }
+        .panel {
+          padding: 22px;
+        }
+        .builder {
+          padding-bottom: 55px;
+        }
+        .footer .container {
+          display: block;
+        }
+        .footer span {
+          display: block;
+          margin-top: 6px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          transition: none !important;
+        }
+      }
+      /* Cinematic story splash: pack, run, escape the noise, finally get home */
+      #intro {
+        position: fixed;
+        inset: 0;
+        z-index: 500;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        text-align: center;
+        padding: clamp(18px, 4vw, 36px);
+        background: #090811;
+        isolation: isolate;
+        transition:
+          opacity 0.7s,
+          visibility 0.7s;
+      }
+      #intro.done {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .intro-scene {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background: linear-gradient(
+          180deg,
+          #171126 0%,
+          #100d1a 62%,
+          #08070e 100%
+        );
+        z-index: -1;
+      }
+      .hall-glow {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse at 50% 34%, #59407888, transparent 55%),
+          linear-gradient(
+            90deg,
+            #08070ed9,
+            transparent 25%,
+            transparent 75%,
+            #08070ed9
+          );
+      }
+      .hall-ceiling {
+        position: absolute;
+        left: -15%;
+        right: -15%;
+        top: -35%;
+        height: 75%;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 12%,
+            #a78bfa12 12.2% 12.5%,
+            transparent 12.7% 25%
+          ),
+          linear-gradient(#08070c, #29203b);
+        clip-path: polygon(0 0, 100% 0, 68% 100%, 32% 100%);
+      }
+      .hall-floor {
+        position: absolute;
+        left: -30%;
+        right: -30%;
+        bottom: -30%;
+        height: 67%;
+        background:
+          repeating-linear-gradient(
+            0deg,
+            transparent 0 38px,
+            #d9a0b715 39px 41px
+          ),
+          linear-gradient(180deg, #2b203c, #09080f);
+        clip-path: polygon(34% 0, 66% 0, 100% 100%, 0 100%);
+        animation: floorRush 1.05s linear infinite;
+      }
+      .hallway-doors {
+        position: absolute;
+        inset: 8% -10% 18%;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 8%,
+            #c4a5ff14 8.2% 8.5%,
+            transparent 8.7% 16%
+          ),
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 15%,
+            #08070c 15.2% 16%,
+            transparent 16.2% 31%
+          );
+        transform: perspective(320px) rotateX(3deg);
+        animation: doorsRush 1.8s linear infinite;
+      }
+      .exit-door {
+        position: absolute;
+        left: 50%;
+        top: 21%;
+        width: clamp(72px, 13vw, 150px);
+        height: clamp(105px, 22vh, 220px);
+        transform: translateX(-50%);
+        border: 2px solid #e7cba0aa;
+        border-radius: 5px 5px 0 0;
+        background: linear-gradient(180deg, #f8dcae, #c7a5fa 48%, #fff0d9);
+        box-shadow: 0 0 55px #e7cba055;
+        animation: homeDoor 7.4s both;
+      }
+      .exit-door:before {
+        content: "HOME";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        color: #22182e;
+        font: 900 clamp(8px, 1.1vw, 12px) var(--ui);
+        letter-spacing: 2px;
+      }
+      .exit-door:after {
+        content: "";
+        position: absolute;
+        right: 10%;
+        top: 52%;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #2a1b3c;
+      }
+      .locker {
+        position: absolute;
+        top: 15%;
+        bottom: 20%;
+        width: 18%;
+        border: 1px solid #a78bfa32;
+        background: repeating-linear-gradient(
+          180deg,
+          #211a30 0 16%,
+          #a78bfa24 16.4% 17%,
+          #171323 17.5% 32%
+        );
+        box-shadow: inset 0 0 18px #0008;
+      }
+      .locker.left {
+        left: -2%;
+        transform: perspective(240px) rotateY(17deg);
+      }
+      .locker.right {
+        right: -2%;
+        transform: perspective(240px) rotateY(-17deg);
+      }
+      .thought {
+        position: absolute;
+        top: 15%;
+        padding: 8px 13px;
+        border: 1px solid #d9a0b76b;
+        border-radius: 18px;
+        background: #130f20d9;
+        color: #f8eaf3;
+        font-size: clamp(0.62rem, 1.3vw, 0.85rem);
+        font-weight: 800;
+        letter-spacing: 1px;
+        box-shadow: 0 8px 30px #0006;
+        animation: thoughtPanic 5.8s both;
+      }
+      .thought.one {
+        left: 9%;
+        --tilt: -9deg;
+      }
+      .thought.two {
+        right: 8%;
+        top: 29%;
+        --tilt: 8deg;
+        animation-delay: 0.5s;
+      }
+      .thought.three {
+        left: 15%;
+        top: 43%;
+        --tilt: 5deg;
+        animation-delay: 1s;
+      }
+      .runner {
+        position: absolute;
+        left: 50%;
+        bottom: 17%;
+        width: clamp(80px, 15vw, 150px);
+        height: clamp(150px, 30vh, 270px);
+        transform: translateX(-50%);
+        animation: runnerEscape 7.4s both;
+        filter: drop-shadow(0 12px 20px #0009);
+      }
+      .runner-head {
+        position: absolute;
+        z-index: 3;
+        left: 38%;
+        top: 2%;
+        width: 31%;
+        aspect-ratio: 1;
+        border-radius: 46% 48% 44% 45%;
+        background: #d6a17f;
+        border: 2px solid #f4d0ad;
+        box-shadow: inset -7px -3px #8d5a59;
+      }
+      .runner-hair {
+        position: absolute;
+        z-index: 4;
+        left: 34%;
+        top: 0;
+        width: 38%;
+        height: 19%;
+        border-radius: 55% 55% 20% 25%;
+        background: #20162b;
+        transform: rotate(-12deg);
+      }
+      .runner-body {
+        position: absolute;
+        left: 31%;
+        top: 24%;
+        width: 44%;
+        height: 38%;
+        border-radius: 18px 18px 10px 10px;
+        background: linear-gradient(100deg, #a78bfa, #62459c);
+        border: 2px solid #d8c4ff;
+        transform: rotate(-9deg);
+      }
+      .runner-bag {
+        position: absolute;
+        z-index: 2;
+        left: 13%;
+        top: 29%;
+        width: 30%;
+        height: 31%;
+        border-radius: 10px 10px 13px 13px;
+        background: linear-gradient(135deg, #d9a0b7, #8d557d);
+        border: 2px solid #f2c5d7;
+        transform: rotate(-18deg);
+        box-shadow: inset 0 0 0 4px #402744;
+      }
+      .runner-bag:before {
+        content: "";
+        position: absolute;
+        left: 23%;
+        right: 23%;
+        top: -9%;
+        height: 14%;
+        border: 2px solid #e7cba0;
+        border-bottom: 0;
+        border-radius: 8px 8px 0 0;
+      }
+      .runner-arm {
+        position: absolute;
+        top: 31%;
+        width: 13%;
+        height: 28%;
+        border-radius: 20px;
+        background: #d6a17f;
+        transform-origin: top center;
+      }
+      .runner-arm.left {
+        left: 25%;
+        transform: rotate(38deg);
+        animation: armLeft 0.38s ease-in-out infinite alternate;
+      }
+      .runner-arm.right {
+        right: 18%;
+        transform: rotate(-46deg);
+        animation: armRight 0.38s ease-in-out infinite alternate;
+      }
+      .runner-leg {
+        position: absolute;
+        top: 56%;
+        width: 15%;
+        height: 35%;
+        border-radius: 12px;
+        background: #242037;
+        transform-origin: top center;
+      }
+      .runner-leg.left {
+        left: 35%;
+        animation: legLeft 0.36s ease-in-out infinite alternate;
+      }
+      .runner-leg.right {
+        left: 57%;
+        animation: legRight 0.36s ease-in-out infinite alternate;
+      }
+      .runner-shoe {
+        position: absolute;
+        bottom: 3%;
+        width: 24%;
+        height: 8%;
+        border-radius: 9px 15px 5px 5px;
+        background: #f0e6ed;
+      }
+      .runner-shoe.left {
+        left: 24%;
+      }
+      .runner-shoe.right {
+        right: 11%;
+      }
+      .flying-paper {
+        position: absolute;
+        width: clamp(18px, 3vw, 34px);
+        height: clamp(24px, 4vw, 44px);
+        background: #f8f0dc;
+        border-radius: 2px;
+        box-shadow: 0 0 14px #fff2;
+        animation: paperFly 2.2s ease-in-out infinite;
+      }
+      .flying-paper:after {
+        content: "≋";
+        color: #8d77b5;
+        font-size: 14px;
+        display: block;
+        margin-top: 2px;
+      }
+      .paper-a {
+        left: 24%;
+        top: 48%;
+        animation-delay: -0.7s;
+      }
+      .paper-b {
+        right: 23%;
+        top: 56%;
+        animation-delay: -1.4s;
+      }
+      .paper-c {
+        right: 32%;
+        top: 17%;
+        animation-delay: -0.2s;
+      }
+      .packing-card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: min(84vw, 560px);
+        transform: translate(-50%, -50%);
+        padding: 16px 22px;
+        border: 1px solid #d9a0b75c;
+        border-radius: 16px;
+        background: #0c0917df;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 70px #0008;
+        animation: packingBeat 7.4s both;
+      }
+      .packing-card .packing-label {
+        color: var(--gold);
+        font-size: 0.7rem;
+        font-weight: 900;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .packing-card .packing-line {
+        margin-top: 5px;
+        color: #fff0f5;
+        font: 800 clamp(1.15rem, 3vw, 2rem)/1.25 var(--display);
+        letter-spacing: 0.02em;
+      }
+      .packing-card .packing-small {
+        margin-top: 5px;
+        color: #c8bbd8;
+        font-size: 0.78rem;
+        letter-spacing: 0.7px;
+      }
+      .intro-inner {
+        position: relative;
+        z-index: 5;
+        max-width: 900px;
+        padding-top: min(37vh, 300px);
+        opacity: 0;
+        animation: titleArrive 7.4s both;
+      }
+      .intro-icon {
+        width: 42px;
+        height: 42px;
+        color: var(--gold);
+        margin-bottom: 4px;
+        filter: drop-shadow(0 0 18px #e7cba080);
+      }
+      .intro-title {
+        font-size: clamp(2rem, 7.4vw, 5.2rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+        margin: 8px 0 12px;
+        text-shadow: 0 8px 35px #0009;
+      }
+      .intro-sub {
+        color: #e1d5e8;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 12px #000;
+      }
+      .skip {
+        position: absolute;
+        z-index: 10;
+        right: 20px;
+        bottom: 20px;
+        background: #100d1bcc;
+        color: white;
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        padding: 9px 13px;
+        cursor: pointer;
+        backdrop-filter: blur(8px);
+      }
+      @keyframes floorRush {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 82px;
+        }
+      }
+      @keyframes doorsRush {
+        0% {
+          transform: perspective(320px) rotateX(3deg) scale(1);
+        }
+        100% {
+          transform: perspective(320px) rotateX(3deg) scale(1.12);
+        }
+      }
+      @keyframes homeDoor {
+        0%,
+        58% {
+          opacity: 0;
+          transform: translateX(-50%) scale(0.55);
+        }
+        72% {
+          opacity: 1;
+          transform: translateX(-50%) scale(1.15);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(-50%) scale(1);
+        }
+      }
+      @keyframes runnerEscape {
+        0%,
+        16% {
+          transform: translateX(-50%) translateY(8px) scale(0.82);
+          opacity: 0;
+        }
+        24% {
+          opacity: 1;
+        }
+        35%,
+        60% {
+          transform: translateX(-50%) translateY(0) scale(1);
+        }
+        78% {
+          transform: translateX(-50%) translateY(-8px) scale(1.08);
+        }
+        100% {
+          transform: translateX(-50%) translateY(-4px) scale(1.08);
+        }
+      }
+      @keyframes armLeft {
+        to {
+          transform: rotate(-35deg);
+        }
+      }
+      @keyframes armRight {
+        to {
+          transform: rotate(30deg);
+        }
+      }
+      @keyframes legLeft {
+        to {
+          transform: rotate(-32deg);
+        }
+      }
+      @keyframes legRight {
+        to {
+          transform: rotate(38deg);
+        }
+      }
+      @keyframes paperFly {
+        0%,
+        100% {
+          transform: translate(0, 0) rotate(0);
+          opacity: 0.15;
+        }
+        50% {
+          transform: translate(-38px, -55px) rotate(35deg);
+          opacity: 1;
+        }
+      }
+      @keyframes thoughtPanic {
+        0%,
+        15% {
+          opacity: 0;
+          transform: scale(0.65) rotate(var(--tilt, 0deg));
+        }
+        25%,
+        60% {
+          opacity: 1;
+          transform: scale(1) rotate(var(--tilt, 0deg));
+        }
+        78%,
+        100% {
+          opacity: 0;
+          transform: scale(0.75) rotate(var(--tilt, 0deg));
+        }
+      }
+      @keyframes packingBeat {
+        0%,
+        15% {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        22%,
+        35% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.88);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.88);
+        }
+      }
+      @keyframes titleArrive {
+        0%,
+        68% {
+          opacity: 0;
+          transform: translateY(24px) scale(0.96);
+        }
+        80%,
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      @media (max-width: 620px) {
+        .packing-card {
+          top: 43%;
+          padding: 13px 15px;
+        }
+        .intro-inner {
+          padding-top: 46vh;
+        }
+        .intro-icon {
+          width: 32px;
+          height: 32px;
+        }
+        .thought.one {
+          left: 4%;
+        }
+        .thought.two {
+          right: 4%;
+        }
+        .thought.three {
+          left: 6%;
+        }
+        .runner {
+          bottom: 16%;
+        }
+        .intro-title {
+          font-size: clamp(1.8rem, 8.2vw, 3.3rem);
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #intro .hall-floor,
+        #intro .hallway-doors,
+        #intro .exit-door,
+        #intro .runner,
+        #intro .thought,
+        #intro .flying-paper,
+        #intro .packing-card,
+        #intro .intro-inner,
+        #intro .runner-arm,
+        #intro .runner-leg {
+          animation: none !important;
+        }
+        #intro .packing-card {
+          opacity: 0;
+        }
+        #intro .intro-inner {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* Visual anime-inspired avatar builder */
+      .avatar-stage {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 235px;
+        margin: 0 0 22px;
+        border: 1px solid #d9a0b733;
+        border-radius: 16px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 50% 35%, #49306c 0, transparent 62%),
+          linear-gradient(145deg, #151020, #0b0913);
+        isolation: isolate;
+      }
+      .avatar-stage::before,
+      .avatar-stage::after {
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border: 1px solid #a78bfa35;
+        border-radius: 50%;
+        z-index: -1;
+      }
+      .avatar-stage::after {
+        width: 230px;
+        height: 230px;
+        border-color: #e7cba020;
+      }
+      .avatar-figure {
+        position: relative;
+        width: 128px;
+        height: 190px;
+        filter: drop-shadow(0 12px 22px #0008);
+        --skin: #d6a17f;
+        --hair: #20162b;
+        --outfit: #7d5ac7;
+        --effect: #a78bfa;
+      }
+      .avatar-aura {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .avatar-head {
+        position: absolute;
+        top: 18px;
+        left: 39px;
+        width: 51px;
+        height: 59px;
+        border: 2px solid #f4d0ad;
+        border-radius: 46% 46% 44% 44%;
+        background: var(--skin);
+        z-index: 3;
+        box-shadow: inset -7px -3px #8d5a59;
+      }
+      .avatar-hair {
+        position: absolute;
+        z-index: 4;
+        top: 8px;
+        left: 32px;
+        width: 64px;
+        height: 32px;
+        border-radius: 55% 55% 24% 20%;
+        background: var(--hair);
+        transform: rotate(-7deg);
+      }
+      .avatar-hair::after {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 17px;
+        width: 15px;
+        height: 28px;
+        background: var(--hair);
+        border-radius: 0 0 70% 40%;
+        transform: rotate(12deg);
+      }
+      .avatar-eyes {
+        position: absolute;
+        z-index: 5;
+        top: 44px;
+        left: 48px;
+        width: 33px;
+        height: 5px;
+        border-left: 4px solid #382538;
+        border-right: 4px solid #382538;
+      }
+      .avatar-body {
+        position: absolute;
+        z-index: 2;
+        top: 75px;
+        left: 23px;
+        width: 82px;
+        height: 70px;
+        border: 2px solid #d8c4ff;
+        border-radius: 20px 20px 12px 12px;
+        background: linear-gradient(100deg, var(--outfit), #21172e);
+        clip-path: polygon(18% 0, 82% 0, 100% 100%, 0 100%);
+      }
+      .avatar-body::after {
+        content: "✦";
+        position: absolute;
+        top: 15px;
+        left: 35px;
+        color: #f4e5c9;
+        font-size: 16px;
+      }
+      .avatar-leg {
+        position: absolute;
+        z-index: 1;
+        top: 132px;
+        width: 25px;
+        height: 49px;
+        border-radius: 0 0 8px 8px;
+        background: #292338;
+      }
+      .avatar-leg.left {
+        left: 38px;
+      }
+      .avatar-leg.right {
+        left: 67px;
+      }
+      .avatar-accessory {
+        position: absolute;
+        z-index: 6;
+        top: 34px;
+        left: 31px;
+        font-size: 24px;
+        filter: drop-shadow(0 2px 4px #000);
+      }
+      .avatar-stage[data-hair="Spiky"] .avatar-hair {
+        height: 38px;
+        border-radius: 30% 30% 15% 15%;
+        clip-path: polygon(
+          0 65%,
+          8% 15%,
+          23% 38%,
+          38% 0,
+          52% 35%,
+          72% 4%,
+          78% 38%,
+          100% 15%,
+          96% 100%,
+          0 100%
+        );
+      }
+      .avatar-stage[data-hair="Long"] .avatar-hair {
+        height: 42px;
+        border-radius: 55% 55% 18% 18%;
+      }
+      .avatar-stage[data-hair="Long"] .avatar-hair::after {
+        height: 65px;
+        width: 18px;
+        left: 42px;
+        top: 18px;
+        border-radius: 0 0 10px 10px;
+      }
+      .avatar-stage[data-hair="Curly"] .avatar-hair {
+        border-radius: 45%;
+        box-shadow:
+          0 -7px 0 -1px var(--hair),
+          -8px 1px 0 -1px var(--hair),
+          8px 1px 0 -1px var(--hair);
+      }
+      .avatar-stage[data-hair="Ponytail"] .avatar-hair {
+        border-radius: 55% 55% 20% 20%;
+      }
+      .avatar-stage[data-hair="Ponytail"] .avatar-hair::before {
+        content: "";
+        position: absolute;
+        right: -13px;
+        top: 8px;
+        width: 18px;
+        height: 43px;
+        background: var(--hair);
+        border-radius: 50%;
+      }
+      .avatar-stage[data-outfit="Streetwear"] .avatar-body {
+        background: linear-gradient(100deg, #343447, #161622);
+        border-color: #d9a0b7;
+      }
+      .avatar-stage[data-outfit="Football kit"] .avatar-body {
+        background: linear-gradient(100deg, #1d875c, #0c513c);
+        border-color: #7fffc1;
+      }
+      .avatar-stage[data-outfit="Academy uniform"] .avatar-body {
+        background: linear-gradient(100deg, #a78bfa, #43316d);
+        border-color: #e7cba0;
+      }
+      .avatar-stage[data-outfit="Tactical jacket"] .avatar-body {
+        background: linear-gradient(100deg, #49505d, #1a202b);
+        border-color: #d9a0b7;
+      }
+      .avatar-stage[data-effect="Purple aura"] .avatar-aura {
+        opacity: 1;
+        box-shadow:
+          0 0 40px 18px #a78bfa55,
+          inset 0 0 30px #a78bfa55;
+        animation: auraPulse 2s ease-in-out infinite;
+      }
+      .avatar-stage[data-effect="Rose sparks"] .avatar-aura {
+        opacity: 1;
+        background:
+          radial-gradient(circle at 20% 25%, #f0abcf 0 2px, transparent 4px),
+          radial-gradient(circle at 80% 38%, #f0abcf 0 2px, transparent 4px),
+          radial-gradient(circle at 25% 75%, #f0abcf 0 2px, transparent 4px),
+          radial-gradient(circle at 77% 80%, #f0abcf 0 2px, transparent 4px);
+      }
+      .avatar-stage[data-effect="Golden glow"] .avatar-aura {
+        opacity: 1;
+        box-shadow:
+          0 0 38px 12px #e7cba044,
+          inset 0 0 24px #e7cba044;
+      }
+      @keyframes auraPulse {
+        50% {
+          transform: scale(1.08);
+          opacity: 0.65;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #intro *,
+        .avatar-aura {
+          animation: none !important;
+        }
+      }
+      \n body::selection {
+        background: #ff8c42;
+        color: #171717;
+      }
+      ::selection {
+        background: #ff8c42;
+        color: #171717;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="intro"
+      aria-label="Cinematic intro: Yaya packs his bag, races through the school, and finally gets home"
+    >
+      <div class="intro-scene" aria-hidden="true">
+        <div class="hall-ceiling"></div>
+        <div class="hallway-doors"></div>
+        <div class="hall-floor"></div>
+        <div class="hall-glow"></div>
+        <div class="locker left"></div>
+        <div class="locker right"></div>
+        <div class="exit-door"></div>
+        <div class="thought one">HOME. NOW.</div>
+        <div class="thought two">WHY IS IT SO LOUD?</div>
+        <div class="thought three">JUST GET TO THE EXIT!</div>
+        <div class="flying-paper paper-a"></div>
+        <div class="flying-paper paper-b"></div>
+        <div class="flying-paper paper-c"></div>
+        <div class="runner">
+          <div class="runner-bag"></div>
+          <div class="runner-head"></div>
+          <div class="runner-hair"></div>
+          <div class="runner-body"></div>
+          <div class="runner-arm left"></div>
+          <div class="runner-arm right"></div>
+          <div class="runner-leg left">
+            <div class="runner-shoe left"></div>
+          </div>
+          <div class="runner-leg right">
+            <div class="runner-shoe right"></div>
+          </div>
+        </div>
+        <div class="packing-card">
+          <div class="packing-label">MISSION: GET HOME</div>
+          <div class="packing-line">PACK THE BAG. RUN FOR IT.</div>
+          <div class="packing-small">
+            Books? Check. Phone? Check. Sanity? ...loading.
+          </div>
+        </div>
+      </div>
+      <div class="intro-inner">
+        <svg
+          class="intro-icon"
+          viewBox="0 0 64 64"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M32 4 39 24 60 32 39 39 32 60 25 39 4 32 25 24 32 4Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <circle cx="32" cy="32" r="10" stroke="#d9a0a9" stroke-width="1.5" />
+        </svg>
+        <div class="eyebrow">An original novel by Yaya</div>
+        <h2 class="intro-title">
+          A BOY IN A<br /><span class="gradient">GIRL PARADE ARMY</span>
+        </h2>
+        <div class="intro-sub">
+          He survived the school day. Now he just wants to get home.
+        </div>
+      </div>
+      <button class="skip" id="skip" type="button">Skip intro ↗</button>
+    </div>
+    <div class="topline" aria-hidden="true"></div>
+    <header>
+      <nav class="container" aria-label="Main navigation">
+        <a
+          class="logo"
+          href="index.html"
+          aria-label="A Boy in a Girl Parade Army home"
+          ><span>A BOY IN A GIRL</span><span>PARADE ARMY</span></a
+        >
+        <button
+          class="menu"
+          id="menuButton"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navlinks"
+        >
+          Menu ☰
+        </button>
+        <div class="navlinks" id="navlinks">
+          <a href="index.html">Home</a>
+          <a href="index.html#blurbpreview">Blurb Preview</a>
+          <a href="index.html#characters">Characters</a>
+          <a href="make-your-character.html" aria-current="page"
+            >Make Your Character</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="eyebrow">Your imagination. Your character.</div>
+        <h1>Make Your <span class="gradient">Character</span></h1>
+        <p>
+          Step into Yaya's chaotic school universe and create someone entirely
+          your own. Choose their role, style, personality, and special talent —
+          then generate a profile to keep or share.
+        </p>
+      </section>
+      <section class="builder container" aria-label="Character creator">
+        <form class="panel" id="characterForm">
+          <h2>Character Workshop</h2>
+          <p class="sub">
+            Build your original character. Fields marked optional can be left
+            blank.
+          </p>
+          <div class="field-grid">
+            <div class="field">
+              <label for="name">Character name *</label
+              ><input
+                id="name"
+                name="name"
+                maxlength="40"
+                placeholder="e.g. Alex Storm"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="nickname">Nickname</label
+              ><input
+                id="nickname"
+                name="nickname"
+                maxlength="40"
+                placeholder="e.g. The Phantom"
+              />
+            </div>
+            <div class="field">
+              <label for="role">Role in the story</label
+              ><select id="role" name="role">
+                <option>New student</option>
+                <option>Best friend</option>
+                <option>Football rival</option>
+                <option>Class genius</option>
+                <option>Quiet mystery</option>
+                <option>Prankster</option>
+                <option>Team captain</option>
+                <option>Wildcard</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pronouns">Pronouns</label
+              ><select id="pronouns" name="pronouns">
+                <option>They / them</option>
+                <option>He / him</option>
+                <option>She / her</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="hair">Hair style / color</label
+              ><input
+                id="hair"
+                name="hair"
+                maxlength="70"
+                placeholder="e.g. Messy black curls"
+              />
+            </div>
+            <div class="field">
+              <label for="eyes">Eye color</label
+              ><select id="eyes" name="eyes">
+                <option>Brown</option>
+                <option>Green</option>
+                <option>Blue</option>
+                <option>Hazel</option>
+                <option>Grey</option>
+                <option>Violet (fictional)</option>
+                <option>Heterochromia</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="personality">Personality</label
+              ><select id="personality" name="personality">
+                <option>Funny and loyal</option>
+                <option>Confident and competitive</option>
+                <option>Quiet and observant</option>
+                <option>Kind and thoughtful</option>
+                <option>Mischievous and unpredictable</option>
+                <option>Serious but caring</option>
+                <option>Bold and adventurous</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="talent">Special talent</label
+              ><select id="talent" name="talent">
+                <option>Football skills</option>
+                <option>Strategic thinking</option>
+                <option>Tech and coding</option>
+                <option>Art and creativity</option>
+                <option>Supernatural instincts</option>
+                <option>Making everyone laugh</option>
+                <option>Detective-level observation</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="avatarHair">Avatar hairstyle</label
+              ><select id="avatarHair" name="avatarHair">
+                <option>Classic</option>
+                <option>Spiky</option>
+                <option>Long</option>
+                <option>Curly</option>
+                <option>Ponytail</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="avatarOutfit">Outfit style</label
+              ><select id="avatarOutfit" name="avatarOutfit">
+                <option>Academy uniform</option>
+                <option>Streetwear</option>
+                <option>Football kit</option>
+                <option>Tactical jacket</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="avatarAccessory">Accessory</label
+              ><select id="avatarAccessory" name="avatarAccessory">
+                <option>None</option>
+                <option>Glasses</option>
+                <option>Headphones</option>
+                <option>Crown</option>
+                <option>Halo</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="avatarEffect">Special effect</label
+              ><select id="avatarEffect" name="avatarEffect">
+                <option>None</option>
+                <option>Purple aura</option>
+                <option>Rose sparks</option>
+                <option>Golden glow</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="likes">Interests and hobbies</label
+              ><input
+                id="likes"
+                name="likes"
+                maxlength="120"
+                placeholder="e.g. Football, gaming, late-night coding"
+              />
+            </div>
+            <div class="field full">
+              <label for="bio">Backstory</label
+              ><textarea
+                id="bio"
+                name="bio"
+                maxlength="400"
+                placeholder="What makes your character unforgettable? (Up to 400 characters)"
+              ></textarea
+              ><span class="hint"
+                >Tip: Give them a goal, a challenge, or a secret.</span
+              >
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary" type="submit">
+              ✨ Generate Character</button
+            ><button class="btn btn-secondary" type="button" id="resetButton">
+              Reset
+            </button>
+          </div>
+          <p
+            class="message"
+            id="formMessage"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+        <aside class="panel preview-panel" aria-labelledby="previewHeading">
+          <div class="preview-banner" aria-hidden="true"></div>
+          <h2 id="previewHeading">Live Character Preview</h2>
+          <p class="sub">Your profile updates as you create.</p>
+          <article class="character-card" id="characterCard">
+            <div
+              class="avatar-stage"
+              id="avatarStage"
+              data-hair="Classic"
+              data-outfit="Academy uniform"
+              data-effect="None"
+              aria-label="Live visual avatar preview"
+            >
+              <div class="avatar-aura"></div>
+              <div class="avatar-figure">
+                <div class="avatar-hair"></div>
+                <div class="avatar-head"></div>
+                <div class="avatar-eyes"></div>
+                <div
+                  class="avatar-accessory"
+                  id="avatarAccessoryPreview"
+                  aria-hidden="true"
+                ></div>
+                <div class="avatar-body"></div>
+                <div class="avatar-leg left"></div>
+                <div class="avatar-leg right"></div>
+              </div>
+            </div>
+            <div class="sigil" id="sigil" aria-hidden="true">✦</div>
+            <div class="preview-kicker">Original Character File</div>
+            <h3 id="previewName">Your Character</h3>
+            <div class="nickname" id="previewNickname">
+              The story starts here
+            </div>
+            <div class="role-pill" id="previewRole">New student</div>
+            <div class="stats">
+              <div class="stat">
+                <span>Pronouns</span
+                ><strong id="previewPronouns">They / them</strong>
+              </div>
+              <div class="stat">
+                <span>Appearance</span
+                ><strong id="previewHair">Not set yet</strong>
+              </div>
+              <div class="stat">
+                <span>Eyes</span><strong id="previewEyes">Brown</strong>
+              </div>
+              <div class="stat">
+                <span>Personality</span
+                ><strong id="previewPersonality">Funny and loyal</strong>
+              </div>
+              <div class="stat" style="grid-column: 1/-1">
+                <span>Special talent</span
+                ><strong id="previewTalent">Football skills</strong>
+              </div>
+            </div>
+            <p class="bio" id="previewBio">
+              Add a backstory to give your character a place in the world.
+            </p>
+          </article>
+          <div class="actions">
+            <button class="btn btn-primary" type="button" id="copyButton">
+              📋 Copy Profile</button
+            ><button
+              class="btn btn-secondary"
+              type="button"
+              id="downloadButton"
+            >
+              ↓ Save as .txt
+            </button>
+          </div>
+          <p class="empty-note">
+            Your character is created locally in this page. Nothing is uploaded
+            to a server.
+          </p>
+        </aside>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <strong>A Boy in a Girl Parade Army</strong
+        ><span
+          >Original characters, unlimited chaos. ✦
+          <a href="index.html">Return to the main website</a></span
+        >
+      </div>
+    </footer>
+    <script>
+      (() => {
+        const intro = document.getElementById("intro");
+        const skip = document.getElementById("skip");
+        const reduceMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        let introTimer;
+        function closeIntro() {
+          intro.classList.add("done");
+          if (introTimer) clearTimeout(introTimer);
+        }
+        introTimer = setTimeout(closeIntro, reduceMotion ? 3200 : 7400);
+        skip.addEventListener("click", closeIntro);
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && !intro.classList.contains("done"))
+            closeIntro();
+        });
+      })();
+      const form = document.getElementById("characterForm");
+      const fields = [
+        "name",
+        "nickname",
+        "role",
+        "pronouns",
+        "hair",
+        "eyes",
+        "personality",
+        "talent",
+        "likes",
+        "bio",
+        "avatarHair",
+        "avatarOutfit",
+        "avatarAccessory",
+        "avatarEffect",
+      ];
+      const get = (id) => document.getElementById(id).value.trim();
+      const safe = (value) => value || "Not set yet";
+      function updatePreview() {
+        const name = get("name");
+        const nickname = get("nickname");
+        const hair = get("hair");
+        const likes = get("likes");
+        const bio = get("bio");
+        document.getElementById("previewName").textContent =
+          name || "Your Character";
+        document.getElementById("previewNickname").textContent = nickname
+          ? `“${nickname}”`
+          : "The story starts here";
+        document.getElementById("previewRole").textContent = get("role");
+        document.getElementById("previewPronouns").textContent =
+          get("pronouns");
+        document.getElementById("previewHair").textContent = safe(hair);
+        document.getElementById("previewEyes").textContent = get("eyes");
+        document.getElementById("previewPersonality").textContent =
+          get("personality");
+        document.getElementById("previewTalent").textContent = get("talent");
+        document.getElementById("previewBio").textContent = [
+          bio || "Add a backstory to give your character a place in the world.",
+          likes ? `Interests: ${likes}` : "",
+        ]
+          .filter(Boolean)
+          .join("\n\n");
+        const first = (name || "✦").trim().charAt(0).toUpperCase();
+        document.getElementById("sigil").textContent = first || "✦";
+        const stage = document.getElementById("avatarStage");
+        stage.dataset.hair = get("avatarHair");
+        stage.dataset.outfit = get("avatarOutfit");
+        stage.dataset.effect = get("avatarEffect");
+        const accessories = {
+          None: "",
+          Glasses: "👓",
+          Headphones: "🎧",
+          Crown: "👑",
+          Halo: "😇",
+        };
+        document.getElementById("avatarAccessoryPreview").textContent =
+          accessories[get("avatarAccessory")] || "";
+      }
+      function profileText() {
+        return `A BOY IN A GIRL PARADE ARMY — ORIGINAL CHARACTER\n\nName: ${get("name") || "Unnamed"}\nNickname: ${get("nickname") || "None"}\nRole: ${get("role")}\nPronouns: ${get("pronouns")}\nHair: ${get("hair") || "Not specified"}\nAvatar hairstyle: ${get("avatarHair")}\nOutfit: ${get("avatarOutfit")}\nAccessory: ${get("avatarAccessory")}\nSpecial effect: ${get("avatarEffect")}\nEyes: ${get("eyes")}\nPersonality: ${get("personality")}\nSpecial talent: ${get("talent")}\nInterests: ${get("likes") || "Not specified"}\n\nBackstory:\n${get("bio") || "Not written yet."}\n\nCreated with the Make Your Character page.`;
+      }
+      fields.forEach((id) =>
+        document.getElementById(id).addEventListener("input", updatePreview),
+      );
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!get("name")) {
+          document.getElementById("name").focus();
+          return;
+        }
+        updatePreview();
+        document.getElementById("formMessage").textContent =
+          "Character profile generated! Copy it or save it as a text file.";
+        document
+          .getElementById("previewHeading")
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      document.getElementById("resetButton").addEventListener("click", () => {
+        form.reset();
+        updatePreview();
+        document.getElementById("formMessage").textContent =
+          "Character form reset.";
+      });
+      document
+        .getElementById("copyButton")
+        .addEventListener("click", async () => {
+          if (!get("name")) {
+            document.getElementById("formMessage").textContent =
+              "Add a character name first.";
+            document.getElementById("name").focus();
+            return;
+          }
+          try {
+            await navigator.clipboard.writeText(profileText());
+            document.getElementById("formMessage").textContent =
+              "Profile copied to clipboard!";
+          } catch {
+            const area = document.createElement("textarea");
+            area.value = profileText();
+            document.body.appendChild(area);
+            area.select();
+            const ok = document.execCommand("copy");
+            area.remove();
+            document.getElementById("formMessage").textContent = ok
+              ? "Profile copied to clipboard!"
+              : "Clipboard access was blocked. Use Save as .txt instead.";
+          }
+        });
+      document
+        .getElementById("downloadButton")
+        .addEventListener("click", () => {
+          if (!get("name")) {
+            document.getElementById("formMessage").textContent =
+              "Add a character name first.";
+            document.getElementById("name").focus();
+            return;
+          }
+          const blob = new Blob([profileText()], {
+            type: "text/plain;charset=utf-8",
+          });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download =
+            (get("name")
+              .replace(/[^a-z0-9-_]+/gi, "-")
+              .replace(/^-|-$/g, "") || "character") + ".txt";
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+          document.getElementById("formMessage").textContent =
+            "Character profile saved as a text file.";
+        });
+      const menuButton = document.getElementById("menuButton");
+      const navlinks = document.getElementById("navlinks");
+      menuButton.addEventListener("click", () => {
+        const open = navlinks.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(open));
+      });
+      updatePreview();
+    </script>
+  </body>
+</html>
