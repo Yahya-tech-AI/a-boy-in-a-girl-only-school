@@ -1432,6 +1432,70 @@
           transform: none;
         }
       }
+      /* BUY NOW SECTION */
+      .buy-now-section {
+        padding: 80px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #0b0913, #21103b, #0b0913);
+        border-top: 1px solid rgba(168, 85, 247, 0.3);
+      }
+
+      .buy-now-content {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .buy-now-label {
+        color: #a855f7;
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 4px;
+      }
+
+      .buy-now-section h2 {
+        color: #fff;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        margin: 18px 0;
+      }
+
+      .buy-now-section p {
+        color: #c4bfd1;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin: 0 auto 30px;
+        max-width: 550px;
+      }
+
+      .buy-now-button {
+        display: inline-block;
+        padding: 16px 38px;
+        background: linear-gradient(135deg, #a855f7, #7c3aed);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+        letter-spacing: 1px;
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .buy-now-button:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 35px rgba(168, 85, 247, 0.6);
+      }
+
+      .buy-now-button:focus-visible {
+        outline: 3px solid #fff;
+        outline-offset: 5px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .buy-now-button {
+          transition: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1825,6 +1889,18 @@
               <p><strong>Written and Made by Yaya.</strong></p>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- BUY NOW SECTION -->
+      <section id="BUY_NOW" class="buy-now-section">
+        <div class="buy-now-content">
+          <span class="buy-now-label">JOIN THE PARADE</span>
+          <h2>Interested in Buying?</h2>
+          <p>
+            Ready to join the world of A Boy in a Girl Parade Army? Explore the
+            store and find something you'll love!
+          </p>
+          <a href="store.html" class="buy-now-button">BUY NOW!</a>
         </div>
       </section>
     </main>
