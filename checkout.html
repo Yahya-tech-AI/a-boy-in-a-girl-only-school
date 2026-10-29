@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0913" />
+    <meta name="color-scheme" content="dark" />
+
+    <title>Checkout | A Boy in a Girl Parade Army</title>
+
+    <meta
+      name="description"
+      content="Review your Parade Army Bundle and prepare your order request. Explore the storybook and collectible kit from A Boy in a Girl Parade Army by Yaya."
+    />
+
+    <!-- Checkout is functional, but not intended as a search landing page -->
+    <meta name="robots" content="noindex, follow" />
+
+    <link rel="canonical" href="https://parade-army.cc.cd/checkout.html" />
+
+    <!-- Social sharing metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Parade Army by Yaya" />
+    <meta property="og:title" content="Checkout | Parade Army by Yaya" />
+    <meta
+      property="og:description"
+      content="Review your Parade Army Bundle and prepare your order request."
+    />
+    <meta property="og:url" content="https://parade-army.cc.cd/checkout.html" />
+    <meta property="og:image" content="https://parade-army.cc.cd/cover.jpg" />
+    <meta
+      property="og:image:alt"
+      content="A Boy in a Girl Parade Army by Yaya"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Checkout | Parade Army by Yaya" />
+    <meta
+      name="twitter:description"
+      content="Review your bundle and prepare your order request."
+    />
+    <meta name="twitter:image" content="https://parade-army.cc.cd/cover.jpg" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0913'/%3E%3Crect x='1' y='1' width='62' height='62' rx='15' fill='none' stroke='%23e7cba0' stroke-opacity='.65'/%3E%3Cpath d='M32 20 C22 7 9 20 18 30 L32 44 L46 30 C55 20 42 7 32 20Z' fill='none' stroke='%23c7a5fa' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M32 13 L35 21 L43 24 L35 27 L32 35 L29 27 L21 24 L29 21Z' fill='%23e7cba0'/%3E%3Ccircle cx='47' cy='45' r='3' fill='%23e9a6cf'/%3E%3C/svg%3E"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="reading-progress" id="progress"></div>
+    <header>
+      <nav class="container">
+        <a class="logo" href="store.html"
+          ><span>PARADE ARMY</span><span class="logo-bottom">BY YAYA</span></a
+        ><a class="btn secondary back-link" href="store.html"
+          >← Back to store</a
+        >
+      </nav>
+    </header>
+    <main class="checkout-main container">
+      <div class="eyebrow">YOUR COLLECTOR'S EDITION</div>
+      <h1 class="section-title">Checkout<span class="gradient">.</span></h1>
+      <p class="section-intro">
+        Review your bundle, then prepare your order request.
+      </p>
+      <div class="checkout-grid">
+        <section class="checkout-panel">
+          <h2>Your cart</h2>
+          <div id="cartItems" class="cart-items"></div>
+          <div class="cart-empty" id="emptyCart" hidden>
+            <p>Your cart is waiting for its first story.</p>
+            <a class="btn primary" href="store.html">Explore the bundle</a>
+          </div>
+          <div class="total-row">
+            <span>Subtotal</span><strong id="subtotal">0 EGP</strong>
+          </div>
+          <p class="fine-print">
+            Delivery fees, if applicable, are confirmed separately.
+          </p>
+        </section>
+        <section class="checkout-panel">
+          <h2>Order details</h2>
+          <form id="orderForm">
+            <label for="customerName">Full name</label
+            ><input
+              id="customerName"
+              name="customerName"
+              autocomplete="name"
+              required
+              placeholder="Your full name"
+            />
+            <label for="phone">Phone number</label
+            ><input
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              required
+              inputmode="tel"
+              placeholder="+20 ..."
+            />
+            <label for="address">Delivery address</label
+            ><textarea
+              id="address"
+              name="address"
+              autocomplete="street-address"
+              required
+              rows="3"
+              placeholder="Area, street, building, apartment"
+            ></textarea>
+            <label for="notes"
+              >Order notes <span class="optional">(optional)</span></label
+            ><textarea
+              id="notes"
+              name="notes"
+              rows="2"
+              placeholder="Anything we should know?"
+            ></textarea>
+            <div class="payment-note">
+              <span>✦</span>
+              <div>
+                <strong>Payment confirmation</strong>
+                <p>
+                  This demo prepares an order message. No payment is processed
+                  on this page.
+                </p>
+              </div>
+            </div>
+            <button class="btn primary submit-btn" type="submit">
+              Prepare order request ↗
+            </button>
+            <p class="fine-print" id="formMessage" role="status"></p>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <span><strong>PARADE ARMY BY YAYA</strong></span
+        ><span>Made for story lovers.</span
+        ><span>© <span id="year"></span> Yaya</span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
