@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://girl-only.cc.cd/sitemap.xml
