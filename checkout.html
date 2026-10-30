@@ -1,45 +1,50 @@
+
 <!doctype html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b0913" />
     <meta name="color-scheme" content="dark" />
 
-    <title>Checkout | A Boy in a Girl Parade Army</title>
+    <title>Checkout | A Boy in a GIRL-ONLY School</title>
 
     <meta
       name="description"
-      content="Review your Parade Army Bundle and prepare your order request. Explore the storybook and collectible kit from A Boy in a Girl Parade Army by Yaya."
+      content="Review your Collector's Bundle and prepare your order request. Explore the storybook and collectible kit from A Boy in a GIRL-ONLY School by Yaya."
     />
 
-    <!-- Checkout is functional, but not intended as a search landing page -->
     <meta name="robots" content="noindex, follow" />
-
-    <link rel="canonical" href="https://parade-army.cc.cd/checkout.html" />
 
     <!-- Social sharing metadata -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Parade Army by Yaya" />
-    <meta property="og:title" content="Checkout | Parade Army by Yaya" />
+    <meta
+      property="og:site_name"
+      content="A Boy in a GIRL-ONLY School"
+    />
+    <meta
+      property="og:title"
+      content="Checkout | A Boy in a GIRL-ONLY School"
+    />
     <meta
       property="og:description"
-      content="Review your Parade Army Bundle and prepare your order request."
+      content="Review your Collector's Bundle and prepare your order request."
     />
-    <meta property="og:url" content="https://parade-army.cc.cd/checkout.html" />
-    <meta property="og:image" content="https://parade-army.cc.cd/cover.jpg" />
     <meta
       property="og:image:alt"
-      content="A Boy in a Girl Parade Army by Yaya"
+      content="A Boy in a GIRL-ONLY School by Yaya"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Checkout | Parade Army by Yaya" />
+    <meta
+      name="twitter:title"
+      content="Checkout | A Boy in a GIRL-ONLY School"
+    />
     <meta
       name="twitter:description"
-      content="Review your bundle and prepare your order request."
+      content="Review your Collector's Bundle and prepare your order request."
     />
-    <meta name="twitter:image" content="https://parade-army.cc.cd/cover.jpg" />
+
     <!-- Favicon -->
     <link
       rel="icon"
@@ -49,7 +54,11 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
@@ -57,56 +66,76 @@
 
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="reading-progress" id="progress"></div>
+
     <header>
       <nav class="container">
         <a
           class="logo"
-          href="#home"
-          aria-label="A Boy in a Girl Parade Army — Home"
-          ><span class="logo-top">A BOY IN A</span
-          ><span class="logo-bottom">GIRL PARADE ARMY</span></a
+          href="index.html"
+          aria-label="A Boy in a GIRL-ONLY School — Home"
         >
-        ><a class="btn secondary back-link" href="store.html"
-          >← Back to store</a
-        >
+          <span class="logo-top">A BOY IN A</span>
+          <span class="logo-bottom">GIRL-ONLY SCHOOL</span>
+        </a>
+
+        <a class="btn secondary back-link" href="store.html">
+          ← Back to store
+        </a>
       </nav>
     </header>
+
     <main class="checkout-main container">
       <div class="eyebrow">YOUR COLLECTOR'S EDITION</div>
-      <h1 class="section-title">Checkout<span class="gradient">.</span></h1>
+
+      <h1 class="section-title">
+        Checkout<span class="gradient">.</span>
+      </h1>
+
       <p class="section-intro">
         Review your bundle, then prepare your order request.
       </p>
+
       <div class="checkout-grid">
         <section class="checkout-panel">
           <h2>Your cart</h2>
+
           <div id="cartItems" class="cart-items"></div>
+
           <div class="cart-empty" id="emptyCart" hidden>
             <p>Your cart is waiting for its first story.</p>
-            <a class="btn primary" href="store.html">Explore the bundle</a>
+            <a class="btn primary" href="store.html">
+              Explore the bundle
+            </a>
           </div>
+
           <div class="total-row">
-            <span>Subtotal</span><strong id="subtotal">0 EGP</strong>
+            <span>Subtotal</span>
+            <strong id="subtotal">0 EGP</strong>
           </div>
+
           <p class="fine-print">
             Delivery fees, if applicable, are confirmed separately.
           </p>
         </section>
+
         <section class="checkout-panel">
           <h2>Order details</h2>
+
           <form id="orderForm">
-            <label for="customerName">Full name</label
-            ><input
+            <label for="customerName">Full name</label>
+            <input
               id="customerName"
               name="customerName"
               autocomplete="name"
               required
               placeholder="Your full name"
             />
-            <label for="phone">Phone number</label
-            ><input
+
+            <label for="phone">Phone number</label>
+            <input
               id="phone"
               name="phone"
               autocomplete="tel"
@@ -114,8 +143,9 @@
               inputmode="tel"
               placeholder="+20 ..."
             />
-            <label for="address">Delivery address</label
-            ><textarea
+
+            <label for="address">Delivery address</label>
+            <textarea
               id="address"
               name="address"
               autocomplete="street-address"
@@ -123,14 +153,17 @@
               rows="3"
               placeholder="Area, street, building, apartment"
             ></textarea>
-            <label for="notes"
-              >Order notes <span class="optional">(optional)</span></label
-            ><textarea
+
+            <label for="notes">
+              Order notes <span class="optional">(optional)</span>
+            </label>
+            <textarea
               id="notes"
               name="notes"
               rows="2"
               placeholder="Anything we should know?"
             ></textarea>
+
             <div class="payment-note">
               <span>✦</span>
               <div>
@@ -141,22 +174,38 @@
                 </p>
               </div>
             </div>
+
             <button class="btn primary submit-btn" type="submit">
               Prepare order request ↗
             </button>
-            <p class="fine-print" id="formMessage" role="status"></p>
+
+            <p
+              class="fine-print"
+              id="formMessage"
+              role="status"
+            ></p>
           </form>
         </section>
       </div>
     </main>
+
     <footer>
       <div class="container">
-        <span><strong>PARADE ARMY BY YAYA</strong></span
-        ><span>Made for story lovers.</span
-        ><span>© <span id="year"></span> Yaya</span>
+        <span>
+          <strong>A BOY IN A GIRL-ONLY SCHOOL</strong>
+        </span>
+        <span>Made for story lovers.</span>
+        <span>© <span id="year"></span> Yaya</span>
       </div>
     </footer>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div
+      class="toast"
+      id="toast"
+      role="status"
+      aria-live="polite"
+    ></div>
+
     <script src="app.js"></script>
   </body>
 </html>
